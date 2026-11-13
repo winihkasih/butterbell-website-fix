@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ulasan Pelanggan — Butterbell Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="atas">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header-utama">
+    <div class="header-wadah">
+      <div class="merek">
+        <img src="/images/ButterBell Bakery Logo.png" alt="Logo Butterbell Bakery" class="merek-logo" />
+        <a href="index.html" class="merek-tautan">
+          <span class="merek-nama">Butterbell Bakery</span>
+          <span class="merek-tagline">Artisanal Bakehouse</span>
+        </a>
+      </div>
+      <nav class="navigasi">
+        <a href="index.html" class="navigasi-tautan">Beranda</a>
+        <a href="tentang.html" class="navigasi-tautan">Tentang Kami</a>
+        <a href="menu.html" class="navigasi-tautan">Menu Kami</a>
+        <a href="ulasan.html" class="navigasi-tautan navigasi-tautan-aktif" aria-current="page">Ulasan</a>
+        <a href="lokasi.html" class="navigasi-tautan">Lokasi &amp; Kontak</a>
+      </nav>
+      <div class="header-aksi">
+        <a href="pesan.html" class="tombol-pesan">Pesan Sekarang</a>
+        <div class="pembatas-vertikal">
+          <img src="/images/pp.png" alt="Profil" class="avatar-profil" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="isi-utama">
+    <div class="bungkus-flex-kolom">
+      <div class="pembungkus-dekor">
+        <div class="dekor-latar-1"></div>
+        <div class="dekor-latar-2"></div>
+
+        <div class="wadah-ulasan">
+
+          <!-- ===== 1. HEADER HALAMAN ===== -->
+          <section class="header-ulasan">
+            <div class="lencana-ulasan">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+              <span>Refleksi &amp; Cerita Tamu</span>
+            </div>
+            <h1 class="judul-ulasan">Kata-Kata Manis dari Pelanggan Kami.</h1>
+            <p class="subjudul-ulasan">Momen kecil, camilan menyenangkan, dan pelanggan yang bahagia.</p>
+          </section>
+
+          <!-- ===== 2. DASBOR RINGKASAN ===== -->
+          <section class="dasbor-ulasan">
+            <div class="kisi-dasbor">
+
+              <!-- Kiri: Metrik besar -->
+              <div class="kartu-metrik-besar">
+                <span class="label-metrik-ulasan">Kepuasan Keseluruhan</span>
+                <div class="nilai-metrik-besar">
+                  <span class="angka">4.9</span>
+                  <span class="pembagi">/ 5.0</span>
+                </div>
+                <div class="bintang-besar" aria-label="Rating 5 bintang">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <div class="baris-verifikasi">
+                  <strong>100+ Ulasan Terverifikasi</strong>
+                  <span class="pemisah"></span>
+                  <span>Data simulasi</span>
+                </div>
+                <p class="ket-metrik">
+                  Mencerminkan pesanan hearth, patron pagi, dan pengiriman manis sepanjang musim.
+                </p>
+              </div>
+
+              <!-- Tengah: Distribusi bintang -->
+              <div class="bagian-distribusi">
+                <h3 class="judul-distribusi">Rincian Rating</h3>
+
+                <div class="baris-distribusi">
+                  <div class="baris-distribusi-header">
+                    <span class="baris-distribusi-label">5 Bintang <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></span>
+                    <span class="baris-distribusi-persen">92%</span>
+                  </div>
+                  <div class="batang-progress"><div class="batang-progress-isi" style="width: 92%;"></div></div>
+                </div>
+
+                <div class="baris-distribusi">
+                  <div class="baris-distribusi-header">
+                    <span class="baris-distribusi-label">4 Bintang <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></span>
+                    <span class="baris-distribusi-persen">8%</span>
+                  </div>
+                  <div class="batang-progress"><div class="batang-progress-isi" style="width: 8%;"></div></div>
+                </div>
+
+                <div class="baris-distribusi">
+                  <div class="baris-distribusi-header">
+                    <span class="baris-distribusi-label">3 Bintang <span class="material-symbols-outlined redup">star</span></span>
+                    <span class="baris-distribusi-persen redup">0%</span>
+                  </div>
+                  <div class="batang-progress"><div class="batang-progress-isi redup" style="width: 0%;"></div></div>
+                </div>
+
+                <div class="baris-distribusi">
+                  <div class="baris-distribusi-header">
+                    <span class="baris-distribusi-label">2 &amp; 1 Bintang <span class="material-symbols-outlined redup">star</span></span>
+                    <span class="baris-distribusi-persen redup">0%</span>
+                  </div>
+                  <div class="batang-progress"><div class="batang-progress-isi redup" style="width: 0%;"></div></div>
+                </div>
+              </div>
+
+              <!-- Kanan: Favorit pelanggan -->
+              <div class="kartu-favorit-ulasan">
+                <div class="kepala-favorit-ulasan">
+                  <h4>Favorit Pelanggan</h4>
+                  <span class="material-symbols-outlined">workspace_premium</span>
+                </div>
+                <p class="ket-favorit-ulasan">
+                  Pastry dengan rating teratas yang dirayakan oleh komunitas kami bulan ini.
+                </p>
+                <div class="daftar-favorit-ulasan">
+                  <div class="baris-favorit">
+                    <div class="baris-favorit-header">
+                      <span class="nama">Dubai Chewy Cookie</span>
+                      <span class="persen">98% kepuasan</span>
+                    </div>
+                    <div class="batang-progress-kecil"><div class="batang-progress-kecil-isi" style="width: 98%;"></div></div>
+                  </div>
+                  <div class="baris-favorit">
+                    <div class="baris-favorit-header">
+                      <span class="nama">Saltbread (Shio Pan)</span>
+                      <span class="persen">96% kepuasan</span>
+                    </div>
+                    <div class="batang-progress-kecil"><div class="batang-progress-kecil-isi" style="width: 96%;"></div></div>
+                  </div>
+                  <div class="baris-favorit">
+                    <div class="baris-favorit-header">
+                      <span class="nama">Tiramisu Cake</span>
+                      <span class="persen">95% kepuasan</span>
+                    </div>
+                    <div class="batang-progress-kecil"><div class="batang-progress-kecil-isi" style="width: 95%;"></div></div>
+                  </div>
+                </div>
+                <div class="tag-favorit-ulasan">
+                  <span>Pure Cultured Butter</span>
+                  <span>Valrhona Cocoa</span>
+                  <span>Maldon Sea Salt</span>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ===== 3. STRIP GAMBAR AKSEN ===== -->
+          <section class="strip-aksen">
+            <div class="kartu-aksen">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOL4UCTy1U6PcZ66OwUhckhu0geHh1oXezQGVkf_DBYlTE1RHcdPTv2CFDDuFBaytbSsI-T-Bpq8fZ2X9OiIrI63Lt9X6J-1OJCGMTUDJrV0QF-cW_rAldLHguf-BizjKwoNu7zILlyNTMYPka2iuJNJ7f6mgiJa-u8Qxw_OwAeUyfXHNDxM4uBJ94la9tAcLenLemS8bW2hBpIMq8WH5E0vbpSH4vn-pQHW1TYos" alt="Lapisan croissant" />
+              <div class="kartu-aksen-overlay">
+                <span class="kartu-aksen-label">Lapisan Renyah Pagi</span>
+              </div>
+            </div>
+            <div class="kartu-aksen">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl1j_itiFgQFeamkM9DjRZxxNxBOybpwmVgR3Bnae8cg4LzehSLFVsG00uy4GTBhf8lkXLMYLzEQympoco9fZF40bGFYJZ5qFY9CsadIr6m6JgF3J1YuECJkT8Zl73YXUDXUssz-pddolw5X5mAAKc6n2sEkwOiCWKo39cKxPIPOrDjgCBJggW-65opXTozD_NG3mJE-urddu0bXCtM3AiEKUz0PQ3xX6PVLRFc_Q" alt="Cookies coklat" />
+              <div class="kartu-aksen-overlay">
+                <span class="kartu-aksen-label">Pusat Lembut Kaya</span>
+              </div>
+            </div>
+            <div class="kartu-aksen">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC--DTmYXW6T817z2eB2vnGwu0_Dm6fnFB1u4gFyA5ZWU1XCz-KGGtr_5hJx2Bteo_zpqcdZCCjrXScQc0KlU2cJq7IkgBuWCaQiSmUDDRdEExLA1akQxI4t80gGhUEVUALWdqZkcAYGtjCG7bAoR1te_jHas9f7WxYalDXDdaZz8bFOzzYxDXuCmSCBXh5S3mUEsJqjECzntJ2b4xTyGVjQCb2IeRLWN7dJU-ARMc" alt="Tiramisu" />
+              <div class="kartu-aksen-overlay">
+                <span class="kartu-aksen-label">Mascarpone Lembut</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- ===== 4. KARTU-KARTU ULASAN ===== -->
+          <section class="bagian-ulasan">
+            <div class="kepala-ulasan">
+              <div>
+                <span class="label-ulasan-kecil">Cerita Otentik</span>
+                <h2 class="judul-besar">Catatan Berharga dari Patron Kami</h2>
+              </div>
+              <span class="info-ulasan-terkini">Menampilkan ulasan komunitas terverifikasi terbaru</span>
+            </div>
+
+            <div class="kisi-ulasan" id="wadahUlasan">
+
+              <!-- 1. Nadia Putri -->
+              <article class="kartu-ulasan">
+                <div class="kartu-ulasan-isi">
+                  <div class="kepala-ulasan-kartu">
+                    <div class="profil-ulasan">
+                      <div class="avatar-ulasan">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv-ToqaRybjY7ghLzGbNRK9xUoE0KnbtvDBgPftWLCWkAjD9OrnQJpJn6QynyuLERaPPndeDXLxLciV_MTS1rvfs3KAUgpc17Umvs6qfofpAqXPwNq17vo5M6Va4nESbjBOKxg9jv7JmwcFEVd5CNh-BNboDRD_yqy6TGbCPu__xaOZiDtKEjqmqDCPbezam9xirKHMxoHWaqXtYICC2iV08-JWIEzC8nugHOy0Fk" alt="Nadia Putri" />
+                      </div>
+                      <div>
+                        <h3 class="nama-ulasan">Nadia Putri</h3>
+                        <p class="asal-ulasan">Semarang • 2 hari lalu</p>
+                      </div>
+                    </div>
+                    <div class="bintang-ulasan-kecil">
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                  </div>
+                  <blockquote class="kutipan-ulasan">
+                    "Dubai chewy cookie-nya enak banget! Teksturnya sempurna, dan saya sangat menyukai isiannya."
+                  </blockquote>
+                </div>
+                <div class="footer-kartu-ulasan">
+                  <div class="label-verifikasi">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    <span>Pembelian Terverifikasi</span>
+                  </div>
+                  <span class="produk-ulasan">Dubai Chewy Cookie</span>
+                </div>
+              </article>
+
+              <!-- 2. Kevin Aditya -->
+              <article class="kartu-ulasan">
+                <div class="kartu-ulasan-isi">
+                  <div class="kepala-ulasan-kartu">
+                    <div class="profil-ulasan">
+                      <div class="avatar-ulasan">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-Mp3BYZsnlO4r3OuBXCWP73wuIGG84db98RIc43aRu5ocmBXCYdpRCSwhsJtLzZfPFooX0XS6wDF8nLZd4RddnkrncBqxY8vg9QljPdnmjPboHHw_DT3_5FuXsb4eU3su02Z3OZRfjJBWO4QRzCYv5UKb1gt_usE0WR5yL3HzPVzikBuhDIQ9j8O73fplbXYzYhEwq77ZuF7nM9MmEA8ESOPLZMF6zjDefg289sQ" alt="Kevin Aditya" />
+                      </div>
+                      <div>
+                        <h3 class="nama-ulasan">Kevin Aditya</h3>
+                        <p class="asal-ulasan">Jakarta • 4 hari lalu</p>
+                      </div>
+                    </div>
+                    <div class="bintang-ulasan-kecil">
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                  </div>
+                  <blockquote class="kutipan-ulasan">
+                    "Saya memesan croissant dan saltbread. Keduanya segar dan lezat. Pasti layak dicoba!"
+                  </blockquote>
+                </div>
+                <div class="footer-kartu-ulasan">
+                  <div class="label-verifikasi">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    <span>Pembelian Terverifikasi</span>
+                  </div>
+                  <span class="produk-ulasan">Saltbread &amp; Croissant</span>
+                </div>
+              </article>
+
+              <!-- 3. Jessica Amanda -->
+              <article class="kartu-ulasan">
+                <div class="kartu-ulasan-isi">
+                  <div class="kepala-ulasan-kartu">
+                    <div class="profil-ulasan">
+                      <div class="avatar-ulasan">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPGhwMJIQllUi72cIRE1fIPea29AN3uKG5OJx4rN1fNjA3uMLFmSKQooBaehow24Pr7Ot2JL2ny1n6zZkX1qiFbo2DTWTLTVgRe3EZN6EtKQxVkRPUEp9gBii7ol-xYQDfsX-TkCgGVVwvx6il7HNXoGA_J0CL01YuHXRxyf0V1CBtC58ykAixIS38geaNoOoz24m1jicOmokpBa0SV_uATnZg22unQIyfakWipII" alt="Jessica Amanda" />
+                      </div>
+                      <div>
+                        <h3 class="nama-ulasan">Jessica Amanda</h3>
+                        <p class="asal-ulasan">Surabaya • 1 minggu lalu</p>
+                      </div>
+                    </div>
+                    <div class="bintang-ulasan-kecil">
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                  </div>
+                  <blockquote class="kutipan-ulasan">
+                    "Tiramisu cake-nya luar biasa. Tidak terlalu manis, dan rasa kopinya pas."
+                  </blockquote>
+                </div>
+                <div class="footer-kartu-ulasan">
+                  <div class="label-verifikasi">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    <span>Pembelian Terverifikasi</span>
+                  </div>
+                  <span class="produk-ulasan">Tiramisu Cake</span>
+                </div>
+              </article>
+
+              <!-- 4. Michelle Tan -->
+              <article class="kartu-ulasan">
+                <div class="kartu-ulasan-isi">
+                  <div class="kepala-ulasan-kartu">
+                    <div class="profil-ulasan">
+                      <div class="avatar-ulasan">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy9QmWRTWv_Ic5wxdyjAJ87U99avogt-ye1AE4vL3QWuuGHP_yKz_cHTl29f-l7ZGIMqo7CTVU8RcWP5WXZuv4uvJreY6W0r0lxLcqKNCtiyJsTqfcgxEiejEDzNOC8Y0Hytkszex8Ryps6nwFRWQq9Ry6sje6EieGWVNTQnWs4BjYBL91g7dkrtLveCchV8Jwqfv3LDwH5UkaVpbKk_zOWzSzCaZnjYnve_NI6FI" alt="Michelle Tan" />
+                      </div>
+                      <div>
+                        <h3 class="nama-ulasan">Michelle Tan</h3>
+                        <p class="asal-ulasan">Semarang • 2 minggu lalu</p>
+                      </div>
+                    </div>
+                    <div class="bintang-ulasan-kecil">
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined kosong">star</span>
+                    </div>
+                  </div>
+                  <blockquote class="kutipan-ulasan">
+                    "Kemasan cantik, dan cookies-nya menjadi camilan sore yang sempurna."
+                  </blockquote>
+                </div>
+                <div class="footer-kartu-ulasan">
+                  <div class="label-verifikasi">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    <span>Pembelian Terverifikasi</span>
+                  </div>
+                  <span class="produk-ulasan">Cookies Benben</span>
+                </div>
+              </article>
+
+              <!-- 5. Rafael Wijaya -->
+              <article class="kartu-ulasan">
+                <div class="kartu-ulasan-isi">
+                  <div class="kepala-ulasan-kartu">
+                    <div class="profil-ulasan">
+                      <div class="avatar-ulasan">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOTJcY4uP8S-a498_Pn1WHmdFQ_a30Ytm_nhIQ9CJzt1mEBTJfMJLAyo5gIdeF0MlV32vWf5D0h3Z6MwwnDmYl9zsZviTR-jiZY7MQLGsVefEpCtcQUwKZQPmgwr6EaiF3sG84-azYQSyOGCWFnXx8hDHg6kLglH738XQYt8EkSmHd2cN4SpREURjaRsoRl37zBdjXptvWccg2Jyh4PmKue0BG9dkJxtemWmO_2Dk" alt="Rafael Wijaya" />
+                      </div>
+                      <div>
+                        <h3 class="nama-ulasan">Rafael Wijaya</h3>
+                        <p class="asal-ulasan">Yogyakarta • 3 minggu lalu</p>
+                      </div>
+                    </div>
+                    <div class="bintang-ulasan-kecil">
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                  </div>
+                  <blockquote class="kutipan-ulasan">
+                    "Saya suka betapa banyak variasi yang mereka miliki. Tidak sabar mencoba pastry lainnya!"
+                  </blockquote>
+                </div>
+                <div class="footer-kartu-ulasan">
+                  <div class="label-verifikasi">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    <span>Pembelian Terverifikasi</span>
+                  </div>
+                  <span class="produk-ulasan">Artisan Sourdough &amp; Danish</span>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- Catatan -->
+            <div class="badge-catatan">
+              <span class="material-symbols-outlined">info</span>
+              <p><strong>Catatan:</strong> Nama dan testimoni tersebut merupakan contoh konten fiktif untuk desain website.</p>
+            </div>
+          </section>
+
+          <!-- ===== 5. FORM ULASAN ===== -->
+          <section class="bagian-form-ulasan">
+            <div class="wadah-form-ulasan">
+              <div class="kepala-form-ulasan">
+                <span class="label-bagian">Suara Anda Penting</span>
+                <h2 class="judul-form-ulasan">Bagikan Pengalaman Butterbell Anda</h2>
+                <p class="ket-form-ulasan">
+                  Baik Anda bergabung untuk croissant pagi yang renyah atau menikmati kotak hadiah kami, ceritakan bagaimana kami membuat hari Anda lebih cerah.
+                </p>
+              </div>
+
+              <form class="form-ulasan" id="formUlasan" onsubmit="event.preventDefault(); kirimUlasan();">
+                <div class="baris-form-2">
+                  <div class="grup-form">
+                    <label class="label-form" for="namaReviewer">Nama Lengkap</label>
+                    <input class="input-form" id="namaReviewer" type="text" placeholder="mis. Clara Salsabila" required />
+                  </div>
+                  <div class="grup-form">
+                    <label class="label-form" for="emailReviewer">Alamat Email</label>
+                    <input class="input-form" id="emailReviewer" type="email" placeholder="clara@example.com" required />
+                  </div>
+                </div>
+
+                <div class="grup-form">
+                  <label class="label-form">Rating Bintang</label>
+                  <div class="pemilih-bintang" id="pemilihBintang">
+                    <button aria-label="1 bintang" class="bintang-tombol" data-rating="1" type="button">
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </button>
+                    <button aria-label="2 bintang" class="bintang-tombol" data-rating="2" type="button">
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </button>
+                    <button aria-label="3 bintang" class="bintang-tombol" data-rating="3" type="button">
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </button>
+                    <button aria-label="4 bintang" class="bintang-tombol" data-rating="4" type="button">
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </button>
+                    <button aria-label="5 bintang" class="bintang-tombol" data-rating="5" type="button">
+                      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </button>
+                    <span class="label-nilai-bintang" id="labelNilaiBintang">5.0 / 5.0 (Luar Biasa)</span>
+                    <input id="ratingTerpilih" type="hidden" value="5" />
+                  </div>
+                </div>
+
+                <div class="grup-form">
+                  <label class="label-form" for="teksReviewer">Tulis Ulasan Anda</label>
+                  <textarea class="textarea-form" id="teksReviewer" rows="4" placeholder="Apa yang Anda cicipi? Ceritakan tentang tekstur, kehangatan, dan momen keseluruhan Anda..." required></textarea>
+                </div>
+
+                <div class="aksi-form-ulasan">
+                  <button class="tombol-kirim-ulasan" type="submit">
+                    <span>Kirim Ulasan</span>
+                    <span class="material-symbols-outlined" style="font-size: 16px;">send</span>
+                  </button>
+                  <p class="ket-privasi">Email Anda akan tetap rahasia dan tidak akan dipublikasikan.</p>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <!-- ===== 6. JANJI PATISERI ===== -->
+          <section class="bagian-janji">
+            <div class="kisi-janji">
+              <div class="item-janji">
+                <div class="ikon-janji">
+                  <span class="material-symbols-outlined">bakery_dining</span>
+                </div>
+                <div>
+                  <h4 class="janji-judul">Resep Khusus</h4>
+                  <p class="janji-desk">Sourdough fermentasi dingin 36 jam dan laminasi.</p>
+                </div>
+              </div>
+              <div class="item-janji">
+                <div class="ikon-janji">
+                  <span class="material-symbols-outlined">verified</span>
+                </div>
+                <div>
+                  <h4 class="janji-judul">Umpan Balik Terverifikasi</h4>
+                  <p class="janji-desk">Baca refleksi asli dari patron di seluruh Jawa Tengah.</p>
+                </div>
+              </div>
+              <div class="item-janji">
+                <div class="ikon-janji">
+                  <span class="material-symbols-outlined">nest_eco_leaf</span>
+                </div>
+                <div>
+                  <h4 class="janji-judul">Hadiah Sadar</h4>
+                  <p class="janji-desk">Pembungkus linen signature dan kemasan kertas kompos.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer-utama">
+    <div class="footer-wadah">
+      <div class="kisi-footer">
+        <div class="footer-merek">
+          <div class="footer-merek-header">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrBBq8ugBBRQk5UUTbo9UN5ded9vcPnFk4ee31NnnBbv7UiJZKNxhD5dJ0YiQ4t76hENTuGiU8oy6ziLOetXZjWN5WMLAE6nD9R8NyVPosNyKA4EsxUrMVQacLvI-OPCNwsGs-PJHezZp8j2_BNbZ--xekzHTPaxY8qvhfpCpIJ3ubtSumryn8r6wgYkkjD4vGt38z6rlY2dONts4ot_-2gzoY1NarjbmCS8urdvvn-V" alt="Logo Butterbell Bakery" class="merek-logo" />
+            <span class="footer-merek-nama">Butterbell Bakery</span>
+          </div>
+          <p class="footer-slogan">"Dipanggang dengan Cinta, Dibuat untuk Momen Kecil Anda."</p>
+          <p class="footer-desk">Patiseri warisan Eropa yang dibuat dengan mentega kultur murni, fermentasi lambat, dan dedikasi abadi pada ritual pagi.</p>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Tautan Cepat</h4>
+          <a href="index.html" class="footer-tautan">Beranda</a>
+          <a href="tentang.html" class="footer-tautan">Tentang Kami</a>
+          <a href="menu.html" class="footer-tautan">Menu</a>
+          <a href="ulasan.html" class="footer-tautan">Ulasan Pelanggan</a>
+          <a href="lokasi.html" class="footer-tautan">Kontak</a>
+          <a href="pesan.html" class="footer-tautan">Pesan Online</a>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Bakery &amp; Pertanyaan</h4>
+          <p class="footer-alamat">Jl. Mentari Pagi No. 18, Semarang,<br />Jawa Tengah, Indonesia</p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">call</span><span>+62 812-3456-7890</span></p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">mail</span><span>hello@butterbellbakery.com</span></p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">alternate_email</span><span>@butterbell.bakery</span></p>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Jam Buka</h4>
+          <div class="footer-jam">
+            <div class="footer-jam-baris">
+              <span class="footer-jam-hari">Sen – Jum</span>
+              <span class="footer-jam-waktu">08.00 – 20.00 WIB</span>
+            </div>
+            <div class="footer-jam-baris">
+              <span class="footer-jam-hari">Sab – Min</span>
+              <span class="footer-jam-waktu">08.00 – 21.00 WIB</span>
+            </div>
+          </div>
+          <p class="footer-catatan">Batch segar keluar dari hearth setiap hari pukul 08.00 &amp; 14.30.</p>
+        </div>
+      </div>
+      <div class="footer-bawah">
+        <p>Copyright © Butterbell Bakery. Hak cipta dilindungi.</p>
+        <p class="footer-handcraft">Dibuat dengan Warisan</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#atas" class="tombol-ke-atas" aria-label="Kembali ke atas">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </a>
+
+  <!-- ==================== TOAST ULASAN ==================== -->
+  <div class="toast-ulasan" id="toastUlasan">
+    <div class="toast-ulasan-isi">
+      <span class="material-symbols-outlined">check_circle</span>
+      <div class="toast-ulasan-teks">
+        <span class="toast-ulasan-judul">Ulasan Terkirim!</span>
+        <span class="toast-ulasan-pesan">Terima kasih! Ulasan Anda berhasil dikirimkan (Simulasi).</span>
+      </div>
+      <button class="tombol-tutup-toast" onclick="tutupToast()" type="button" aria-label="Tutup">
+        <span class="material-symbols-outlined" style="font-size: 18px;">close</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==================== SCRIPT ==================== -->
+  <script>
+    (function inisialisasiUlasan() {
+      const tombolBintang = document.querySelectorAll('.bintang-tombol');
+      const ratingTerpilih = document.getElementById('ratingTerpilih');
+      const labelNilaiBintang = document.getElementById('labelNilaiBintang');
+
+      const label = {
+        1: '1.0 / 5.0 (Bisa Lebih Baik)',
+        2: '2.0 / 5.0 (Cukup)',
+        3: '3.0 / 5.0 (Bagus)',
+        4: '4.0 / 5.0 (Sangat Bagus)',
+        5: '5.0 / 5.0 (Luar Biasa)'
+      };
+
+      function perbaruiBintang(nilai) {
+        ratingTerpilih.value = nilai;
+        labelNilaiBintang.textContent = label[nilai] || (nilai + '.0 / 5.0');
+        tombolBintang.forEach((btn, idx) => {
+          const ikon = btn.querySelector('.material-symbols-outlined');
+          if (idx < nilai) {
+            btn.classList.remove('kosong');
+            ikon.style.fontVariationSettings = "'FILL' 1";
+          } else {
+            btn.classList.add('kosong');
+            ikon.style.fontVariationSettings = "'FILL' 0";
+          }
+        });
+      }
+
+      tombolBintang.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const nilai = parseInt(btn.getAttribute('data-rating'), 10);
+          perbaruiBintang(nilai);
+        });
+      });
+
+      window.kirimUlasan = function () {
+        const inputNama = document.getElementById('namaReviewer');
+        const inputEmail = document.getElementById('emailReviewer');
+        const inputTeks = document.getElementById('teksReviewer');
+        const rating = parseInt(ratingTerpilih.value, 10) || 5;
+
+        if (!inputNama.value.trim() || !inputEmail.value.trim() || !inputTeks.value.trim()) {
+          return;
+        }
+
+        // Bangun bintang HTML
+        let htmlBintang = '';
+        for (let i = 1; i <= 5; i++) {
+          if (i <= rating) {
+            htmlBintang += `<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>`;
+          } else {
+            htmlBintang += `<span class="material-symbols-outlined kosong">star</span>`;
+          }
+        }
+
+        const namaAman = escapeHtml(inputNama.value.trim());
+        const teksAman = escapeHtml(inputTeks.value.trim());
+        const inisial = namaAman.charAt(0).toUpperCase();
+
+        const kartuBaru = document.createElement('article');
+        kartuBaru.className = 'kartu-ulasan baru';
+        kartuBaru.innerHTML = `
+          <div class="kartu-ulasan-isi">
+            <div class="kepala-ulasan-kartu">
+              <div class="profil-ulasan">
+                <div class="avatar-ulasan">
+                  <div class="avatar-huruf">${inisial}</div>
+                </div>
+                <div>
+                  <h3 class="nama-ulasan">${namaAman}</h3>
+                  <p class="asal-ulasan">Baru saja • Patron Komunitas</p>
+                </div>
+              </div>
+              <div class="bintang-ulasan-kecil">${htmlBintang}</div>
+            </div>
+            <blockquote class="kutipan-ulasan">&ldquo;${teksAman}&rdquo;</blockquote>
+          </div>
+          <div class="footer-kartu-ulasan">
+            <div class="label-verifikasi">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+              <span>Ulasan Komunitas</span>
+            </div>
+            <span class="produk-ulasan">Spesial Bakehouse</span>
+          </div>
+        `;
+
+        const wadah = document.getElementById('wadahUlasan');
+        if (wadah) {
+          wadah.insertBefore(kartuBaru, wadah.firstChild);
+        }
+
+        tampilkanToast();
+
+        inputNama.value = '';
+        inputEmail.value = '';
+        inputTeks.value = '';
+        perbaruiBintang(5);
+      };
+
+      function escapeHtml(str) {
+        return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+      }
+
+      let timeoutToast;
+      window.tampilkanToast = function () {
+        const toast = document.getElementById('toastUlasan');
+        if (!toast) return;
+        toast.classList.add('tampil');
+        clearTimeout(timeoutToast);
+        timeoutToast = setTimeout(tutupToast, 4500);
+      };
+
+      window.tutupToast = function () {
+        const toast = document.getElementById('toastUlasan');
+        if (toast) toast.classList.remove('tampil');
+      };
+
+      // Set state awal bintang (5 penuh)
+      perbaruiBintang(5);
+    })();
+  </script>
+
+</body>
+</html>

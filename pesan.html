@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pemesanan — Butterbell Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="atas">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header-utama">
+    <div class="header-wadah">
+      <div class="merek">
+        <img src="/images/ButterBell Bakery Logo.png" class="merek-logo" />
+        <a href="index.html" class="merek-tautan">
+          <span class="merek-nama">Butterbell Bakery</span>
+          <span class="merek-tagline">Artisanal Bakehouse</span>
+        </a>
+      </div>
+      <nav class="navigasi">
+        <a href="index.html" class="navigasi-tautan">Beranda</a>
+        <a href="tentang.html" class="navigasi-tautan">Tentang Kami</a>
+        <a href="menu.html" class="navigasi-tautan">Menu Kami</a>
+        <a href="ulasan.html" class="navigasi-tautan">Ulasan</a>
+        <a href="lokasi.html" class="navigasi-tautan">Lokasi &amp; Kontak</a>
+      </nav>
+      <div class="header-aksi">
+        <a href="pesan.html" class="tombol-pesan">Pesan Sekarang</a>
+        <div class="pembatas-vertikal">
+          <img src="/images/pp.png" alt="Profil" class="avatar-profil" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="isi-utama">
+    <div class="bungkus-flex-kolom">
+
+      <!-- ===== BANNER ATAS ===== -->
+      <section class="pahlawan-pesan">
+        <div class="pahlawan-pesan-isi">
+          <div class="konten-pahlawan-pesan">
+            <div class="lencana-pesan">
+              <span class="material-symbols-outlined">bakery_dining</span>
+              <span>Permintaan Hearth Artisan Langsung</span>
+            </div>
+            <h1 class="judul-pesan">Ayo Buat Pesanan Anda.</h1>
+            <p class="subjudul-pesan">Pilih favorit Anda dan biarkan kami menyiapkan sesuatu yang lezat untuk Anda.</p>
+          </div>
+          <div class="kartu-jadwal-pesan">
+            <div class="ikon-jadwal-pesan">
+              <span class="material-symbols-outlined">schedule</span>
+            </div>
+            <div>
+              <p class="label-jadwal-pesan">Jadwal Hearth</p>
+              <p class="nilai-jadwal-pesan">Batch Harian: 08.00 &amp; 14.30 WIB</p>
+              <p class="ket-jadwal-pesan">Dikemas segar langsung saat pengambilan</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GRID FORM + RINGKASAN ===== -->
+      <section class="bagian-pesan">
+        <div class="kisi-pesan">
+
+          <!-- ========== KIRI: FORM ========== -->
+          <div class="form-pesan-kotak">
+            <div class="kepala-form-pesan">
+              <div>
+                <span class="label-form-pesan">Langkah 01 / Detail Permintaan</span>
+                <h2 class="judul-form-pesan">Informasi Patron &amp; Pilihan</h2>
+              </div>
+              <span class="material-symbols-outlined">local_mall</span>
+            </div>
+
+            <form class="form-pesan" id="formPesan" novalidate>
+              <!-- 1. Nama -->
+              <div class="grup-form-pesan">
+                <label class="label-form-pesan-baris" for="custName">
+                  <span>Nama Pelanggan <span class="wajib">*</span></span>
+                  <span class="opsional">Nama lengkap sesuai ID / WhatsApp</span>
+                </label>
+                <div class="bungkus-input">
+                  <span class="material-symbols-outlined ikon-input">person</span>
+                  <input class="input-pesan with-icon" id="custName" name="custName" type="text" placeholder="mis. Clara Anindita" />
+                </div>
+                <p class="pesan-error-pesan" id="errorCustName">
+                  <span class="material-symbols-outlined">error</span> Silakan masukkan nama lengkap Anda.
+                </p>
+              </div>
+
+              <!-- 2 & 3. WhatsApp & Email -->
+              <div class="kisi-metode" style="grid-template-columns: 1fr; gap: 16px;">
+                <div style="display: grid; grid-template-columns: 1fr; gap: 16px;" class="kisi-dua">
+                  <div class="grup-form-pesan">
+                    <label class="label-form-pesan-baris" for="custWa">
+                      <span>Nomor WhatsApp <span class="wajib">*</span></span>
+                    </label>
+                    <div class="bungkus-input">
+                      <span class="material-symbols-outlined ikon-input">chat</span>
+                      <input class="input-pesan with-icon" id="custWa" name="custWa" type="tel" placeholder="081234567890" />
+                    </div>
+                    <p class="pesan-error-pesan" id="errorCustWa">
+                      <span class="material-symbols-outlined">error</span> Nomor Indonesia valid diperlukan (08...).
+                    </p>
+                  </div>
+                  <div class="grup-form-pesan">
+                    <label class="label-form-pesan-baris" for="custEmail">
+                      <span>Alamat Email <span class="wajib">*</span></span>
+                    </label>
+                    <div class="bungkus-input">
+                      <span class="material-symbols-outlined ikon-input">alternate_email</span>
+                      <input class="input-pesan with-icon" id="custEmail" name="custEmail" type="email" placeholder="clara@example.com" />
+                    </div>
+                    <p class="pesan-error-pesan" id="errorCustEmail">
+                      <span class="material-symbols-outlined">error</span> Harap berikan format email yang valid.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Pilihan Produk -->
+              <div class="grup-form-pesan">
+                <label class="label-form-pesan-baris" for="productSelect">
+                  <span>Pilihan Pastry atau Kue <span class="wajib">*</span></span>
+                  <span class="opsional" style="color: var(--warna-sekunder); font-weight: 600;">10 Item Tersedia</span>
+                </label>
+                <div class="bungkus-input">
+                  <span class="material-symbols-outlined ikon-input">cake</span>
+                  <select class="select-pesan with-icon" id="productSelect" name="productSelect">
+                    <option disabled selected value="">Pilih dari menu artisan harian kami...</option>
+                    <option data-badge="Signature" data-price="28000" data-unit="pcs" value="Dubai Chewy Cookie">Dubai Chewy Cookie — Rp28.000</option>
+                    <option data-badge="Bestseller" data-price="18000" data-unit="pcs" value="Saltbread">Saltbread — Rp18.000</option>
+                    <option data-badge="Heritage" data-price="25000" data-unit="pcs" value="Croissant">Croissant (Pure French Butter) — Rp25.000</option>
+                    <option data-badge="Classic" data-price="18000" data-unit="pcs" value="Cookies Benben">Cookies Benben — Rp18.000</option>
+                    <option data-badge="Classic" data-price="20000" data-unit="pcs" value="Cookies Gungun">Cookies Gungun — Rp20.000</option>
+                    <option data-badge="Wild Yeast" data-price="55000" data-unit="loaf" value="Sourdough">Sourdough Loaf (Slow Ferment) — Rp55.000 / loaf</option>
+                    <option data-badge="Spiced" data-price="25000" data-unit="pcs" value="Cinnamon Roll">Cinnamon Roll — Rp25.000</option>
+                    <option data-badge="Laminated" data-price="25000" data-unit="pcs" value="Danish Pastry">Danish Pastry — Rp25.000</option>
+                    <option data-badge="Velvety" data-price="35000" data-unit="slice" value="Cheesecake">Cheesecake (Basque Style) — Rp35.000 / slice</option>
+                    <option data-badge="Mascarpone" data-price="38000" data-unit="slice" value="Tiramisu Cake">Tiramisu Cake — Rp38.000 / slice</option>
+                  </select>
+                </div>
+                <p class="pesan-error-pesan" id="errorProduct">
+                  <span class="material-symbols-outlined">error</span> Silakan pilih setidaknya satu item bakehouse.
+                </p>
+              </div>
+
+              <!-- 5. Jumlah -->
+              <div class="penghitung-jumlah">
+                <div class="label-penghitung">
+                  <span class="judul-penghitung">Jumlah / Porsi</span>
+                  <span class="ket-penghitung" id="qtyUnitLabel">Jumlah item terpilih</span>
+                </div>
+                <div class="kontrol-jumlah">
+                  <button class="tombol-jumlah" id="btnQtyDec" type="button" aria-label="Kurangi jumlah">−</button>
+                  <input class="input-jumlah" id="qtyInput" name="quantity" type="number" value="1" min="1" max="50" />
+                  <button class="tombol-jumlah emas" id="btnQtyInc" type="button" aria-label="Tambah jumlah">+</button>
+                </div>
+              </div>
+
+              <!-- 6. Metode -->
+              <div class="grup-form-pesan">
+                <label class="label-form-pesan-baris">
+                  <span>Metode Pemenuhan <span class="wajib">*</span></span>
+                </label>
+                <div class="kisi-metode">
+                  <label class="kartu-metode" id="labelPickup">
+                    <input type="radio" name="orderMethod" value="pickup" checked />
+                    <div class="kartu-metode-isi">
+                      <div class="kepala-metode">
+                        <span class="material-symbols-outlined">storefront</span>
+                        <span class="judul-metode">Ambil Sendiri</span>
+                      </div>
+                      <p class="ket-metode">Jl. Mentari Pagi No. 18, Semarang</p>
+                      <span class="label-biaya-metode gratis">Gratis (Rp0)</span>
+                    </div>
+                  </label>
+                  <label class="kartu-metode" id="labelDelivery">
+                    <input type="radio" name="orderMethod" value="delivery" />
+                    <div class="kartu-metode-isi">
+                      <div class="kepala-metode">
+                        <span class="material-symbols-outlined">moped</span>
+                        <span class="judul-metode">Pengiriman Lokal</span>
+                      </div>
+                      <p class="ket-metode">Kurir Instan GoSend / GrabExpress</p>
+                      <span class="label-biaya-metode berbayar">Flat Rp15.000</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 7. Catatan -->
+              <div class="grup-form-pesan">
+                <label class="label-form-pesan-baris" for="orderNotes">
+                  <span>Catatan Baking &amp; Kemasan Khusus</span>
+                  <span class="opsional">Opsional</span>
+                </label>
+                <textarea class="textarea-pesan" id="orderNotes" name="orderNotes" rows="3" placeholder="mis. Mohon hangatkan sebelum diserahkan, tulis kartu ucapan: 'Selamat Ulang Tahun Ibu', kemas dalam kotak hadiah..." ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <div style="padding-top: 8px;">
+                <button class="tombol-kirim-pesan" id="btnSubmitOrder" type="submit">
+                  <span>Buat Pesanan Saya</span>
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+                <p class="catatan-simulasi">Simulasi pemesanan tanpa transaksi pembayaran online atau database.</p>
+              </div>
+            </form>
+          </div>
+
+          <!-- ========== KANAN: RINGKASAN ========== -->
+          <div class="kolom-ringkasan">
+            <div class="kartu-ringkasan">
+              <div class="kepala-ringkasan">
+                <div>
+                  <span class="label-ringkasan">Tiket Real-Time</span>
+                  <h3 class="judul-ringkasan">Ringkasan Pesanan</h3>
+                </div>
+                <div class="ikon-ringkasan">
+                  <span class="material-symbols-outlined">receipt_long</span>
+                </div>
+              </div>
+
+              <!-- Empty state -->
+              <div class="kosong-ringkasan" id="summaryEmptyState">
+                <span class="material-symbols-outlined">cookie</span>
+                <p>Belum ada item dipilih</p>
+                <p>Pilih camilan segar dari menu untuk mengisi tiket live Anda.</p>
+              </div>
+
+              <!-- Active state -->
+              <div class="aktif-ringkasan sembunyi" id="summaryActiveState">
+                <div class="item-ringkasan">
+                  <div class="info-ringkasan">
+                    <span class="badge-ringkasan" id="summaryBadge">Signature</span>
+                    <h4 class="nama-ringkasan" id="summaryProductName">Dubai Chewy Cookie</h4>
+                    <p class="harga-ringkasan">Harga Satuan: <strong id="summaryUnitPrice">Rp28.000</strong></p>
+                  </div>
+                  <div class="qty-ringkasan">
+                    <span class="label-qty-ringkasan">Qty</span>
+                    <span class="nilai-qty-ringkasan" id="summaryQtyBadge">1</span>
+                  </div>
+                </div>
+
+                <div class="daftar-kalkulasi">
+                  <div class="baris-kalkulasi">
+                    <span>Subtotal Pastry (<span id="calcQty">1</span>×)</span>
+                    <span class="nilai" id="summarySubtotal">Rp28.000</span>
+                  </div>
+                  <div class="baris-kalkulasi">
+                    <span class="label-metode-kecil">
+                      <span id="summaryMethodText">Pemenuhan (Ambil Sendiri)</span>
+                      <span class="material-symbols-outlined" id="summaryMethodIcon">storefront</span>
+                    </span>
+                    <span class="nilai emas" id="summaryDeliveryFee">Rp0</span>
+                  </div>
+                  <div class="baris-kalkulasi kecil">
+                    <span>Kemasan Artisan</span>
+                    <span class="italic">Gratis</span>
+                  </div>
+                </div>
+
+                <div class="total-ringkasan">
+                  <div>
+                    <span class="label-total">Total Pembayaran</span>
+                    <span class="ket-total">Termasuk estimasi pemenuhan</span>
+                  </div>
+                  <div>
+                    <span class="nilai-total" id="summaryTotalGrand">Rp28.000</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pratinjau penerima -->
+              <div class="pratinjau-penerima">
+                <div class="kepala-pratinjau">
+                  <span class="material-symbols-outlined">info</span>
+                  <span>Pratinjau Penerima</span>
+                </div>
+                <div class="kisi-pratinjau">
+                  <div>
+                    <span class="label-pratinjau">Patron:</span>
+                    <span class="nilai-pratinjau" id="previewName">—</span>
+                  </div>
+                  <div>
+                    <span class="label-pratinjau">Kontak (WA):</span>
+                    <span class="nilai-pratinjau" id="previewWa">—</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jaminan -->
+              <div class="badge-jaminan">
+                <span class="material-symbols-outlined">workspace_premium</span>
+                <p>100% Dijamin roti hangat segar dikemas dengan karton Eropa tanpa pemutih yang berkelanjutan.</p>
+              </div>
+            </div>
+
+            <!-- Sorotan pastry -->
+            <div class="kartu-sorotan">
+              <div class="gambar-sorotan">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuArHfqLqvOQhOfI0R2l-n0nn24IkEIuWHsa2N6Ye9AiGCMrOqM5w6SeAdCZlZAD2UjN3zVyLqxHF07KzNlUe9Xt7Aam7_5HFQknMEbhj2kWLvzwzrk1uHjn8lQbyfItVEw_8RTuz9GuboWPtG_1IGkCTlUl4LdY8s4oreWQeh7ADozPdOhqIk4EQT_VbOfxptuw-OahT4WqJVKzuy_L1mQqHpra_d7yUE6BVCI3g0w" alt="Pastry hangat" />
+              </div>
+              <div class="isi-sorotan">
+                <span class="label-sorotan">Catatan Warisan Chef</span>
+                <p class="judul-sorotan">Fermentasi Dingin 36 Jam Lambat</p>
+                <p class="ket-sorotan">Setiap kerak secara alami diperam menggunakan starter liar untuk catatan rasa khas dan mudah dicerna.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== MODAL KONFIRMASI ===== -->
+      <div class="modal-pesan sembunyi" id="orderSuccessModal">
+        <div class="modal-pesan-kotak">
+          <button class="tutup-modal" id="closeModalBtn" aria-label="Tutup dialog">
+            <span class="material-symbols-outlined" style="font-size: 24px;">close</span>
+          </button>
+
+          <div class="kepala-modal">
+            <div class="ikon-modal">
+              <span class="material-symbols-outlined">task_alt</span>
+            </div>
+            <span class="badge-modal">Pesanan Direservasi</span>
+            <h3 class="judul-modal">Pesanan Berhasil Dibuat!</h3>
+            <p class="ket-modal">Kami telah mengirimkan detail pesanan ke WhatsApp Anda (Simulasi).</p>
+          </div>
+
+          <div class="kotak-tiket-modal">
+            <div class="baris-tiket">
+              <span class="label">Referensi Invoice</span>
+              <span class="nilai" id="modalInvoiceCode">#BB-8492</span>
+            </div>
+            <div class="baris-tiket">
+              <span class="label">Pelanggan</span>
+              <span class="nilai" id="modalCustName">—</span>
+            </div>
+            <div class="baris-tiket">
+              <span class="label">Item Dipesan</span>
+              <span class="nilai" id="modalItemName">—</span>
+            </div>
+            <div class="baris-tiket">
+              <span class="label">Jadwal Pemenuhan</span>
+              <span class="nilai emas" id="modalEstimatedTime">Hari ini, Siap 14:30 WIB</span>
+            </div>
+            <div class="baris-tiket">
+              <span class="label">Metode</span>
+              <span class="nilai" id="modalMethod">Ambil Sendiri</span>
+            </div>
+            <div class="baris-tiket total">
+              <span class="label">Total Pembayaran</span>
+              <span class="nilai" id="modalTotal">Rp0</span>
+            </div>
+          </div>
+
+          <div class="notifikasi-wa-modal">
+            <div class="ikon-wa">
+              <span class="material-symbols-outlined">check</span>
+            </div>
+            <p>Notifikasi WhatsApp otomatis dikirim ke <strong id="modalWaTarget">0812xxxx</strong> dengan instruksi pengambilan.</p>
+          </div>
+
+          <div class="aksi-modal">
+            <button class="tombol-modal-utama" id="btnNewOrder">Buat Pesanan Lain</button>
+            <button class="tombol-modal-sekunder" id="btnDoneModal">Tutup</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== TOAST ===== -->
+      <div class="toast-pesan" id="toastNotification">
+        <span class="material-symbols-outlined">check_circle</span>
+        <span>Pesanan berhasil dibuat! Kami telah mengirimkan detail pesanan ke WhatsApp Anda (Simulasi).</span>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer-utama">
+    <div class="footer-wadah">
+      <div class="kisi-footer">
+        <div class="footer-merek">
+          <div class="footer-merek-header">
+            <img src="/images/ButterBell Bakery Logo.png" alt="Logo Butterbell Bakery" class="merek-logo" />
+            <span class="footer-merek-nama">Butterbell Bakery</span>
+          </div>
+          <p class="footer-slogan">"Dipanggang dengan Cinta, Dibuat untuk Momen Kecil Anda."</p>
+          <p class="footer-desk">Patiseri warisan Eropa yang dibuat dengan mentega kultur murni, fermentasi lambat, dan dedikasi abadi pada ritual pagi.</p>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Tautan Cepat</h4>
+          <a href="index.html" class="footer-tautan">Beranda</a>
+          <a href="tentang.html" class="footer-tautan">Tentang Kami</a>
+          <a href="menu.html" class="footer-tautan">Menu</a>
+          <a href="ulasan.html" class="footer-tautan">Ulasan Pelanggan</a>
+          <a href="lokasi.html" class="footer-tautan">Kontak</a>
+          <a href="pesan.html" class="footer-tautan">Pesan Online</a>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Bakery &amp; Pertanyaan</h4>
+          <p class="footer-alamat">Jl. Mentari Pagi No. 18, Semarang,<br />Jawa Tengah, Indonesia</p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">call</span><span>+62 812-3456-7890</span></p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">mail</span><span>hello@butterbellbakery.com</span></p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">alternate_email</span><span>@butterbell.bakery</span></p>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Jam Buka</h4>
+          <div class="footer-jam">
+            <div class="footer-jam-baris">
+              <span class="footer-jam-hari">Sen – Jum</span>
+              <span class="footer-jam-waktu">08.00 – 20.00 WIB</span>
+            </div>
+            <div class="footer-jam-baris">
+              <span class="footer-jam-hari">Sab – Min</span>
+              <span class="footer-jam-waktu">08.00 – 21.00 WIB</span>
+            </div>
+          </div>
+          <p class="footer-catatan">Batch segar keluar dari hearth setiap hari pukul 08.00 &amp; 14.30.</p>
+        </div>
+      </div>
+      <div class="footer-bawah">
+        <p>Copyright © Butterbell Bakery. Hak cipta dilindungi.</p>
+        <p class="footer-handcraft">Dibuat dengan Warisan</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#atas" class="tombol-ke-atas" aria-label="Kembali ke atas">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </a>
+
+  <!-- ==================== SCRIPT ==================== -->
+  <script>
+    (function inisialisasiPesanan() {
+      const form = document.getElementById('formPesan');
+      const custName = document.getElementById('custName');
+      const custWa = document.getElementById('custWa');
+      const custEmail = document.getElementById('custEmail');
+      const productSelect = document.getElementById('productSelect');
+      const qtyInput = document.getElementById('qtyInput');
+      const btnQtyDec = document.getElementById('btnQtyDec');
+      const btnQtyInc = document.getElementById('btnQtyInc');
+      const methodRadios = document.getElementsByName('orderMethod');
+
+      const errCustName = document.getElementById('errorCustName');
+      const errCustWa = document.getElementById('errorCustWa');
+      const errCustEmail = document.getElementById('errorCustEmail');
+      const errProduct = document.getElementById('errorProduct');
+
+      const summaryEmptyState = document.getElementById('summaryEmptyState');
+      const summaryActiveState = document.getElementById('summaryActiveState');
+      const summaryBadge = document.getElementById('summaryBadge');
+      const summaryProductName = document.getElementById('summaryProductName');
+      const summaryUnitPrice = document.getElementById('summaryUnitPrice');
+      const summaryQtyBadge = document.getElementById('summaryQtyBadge');
+      const calcQty = document.getElementById('calcQty');
+      const summarySubtotal = document.getElementById('summarySubtotal');
+      const summaryMethodText = document.getElementById('summaryMethodText');
+      const summaryMethodIcon = document.getElementById('summaryMethodIcon');
+      const summaryDeliveryFee = document.getElementById('summaryDeliveryFee');
+      const summaryTotalGrand = document.getElementById('summaryTotalGrand');
+      const previewName = document.getElementById('previewName');
+      const previewWa = document.getElementById('previewWa');
+      const qtyUnitLabel = document.getElementById('qtyUnitLabel');
+
+      const modal = document.getElementById('orderSuccessModal');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const btnDoneModal = document.getElementById('btnDoneModal');
+      const btnNewOrder = document.getElementById('btnNewOrder');
+      const modalInvoiceCode = document.getElementById('modalInvoiceCode');
+      const modalCustName = document.getElementById('modalCustName');
+      const modalItemName = document.getElementById('modalItemName');
+      const modalEstimatedTime = document.getElementById('modalEstimatedTime');
+      const modalMethod = document.getElementById('modalMethod');
+      const modalTotal = document.getElementById('modalTotal');
+      const modalWaTarget = document.getElementById('modalWaTarget');
+      const toast = document.getElementById('toastNotification');
+
+      function formatIDR(amount) {
+        return 'Rp' + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+      }
+
+      function getFulfillmentDetails() {
+        let selectedMethod = 'pickup';
+        for (const radio of methodRadios) {
+          if (radio.checked) { selectedMethod = radio.value; break; }
+        }
+        return {
+          method: selectedMethod,
+          fee: selectedMethod === 'delivery' ? 15000 : 0
+        };
+      }
+
+      function updateSummary() {
+        const selectedOption = productSelect.options[productSelect.selectedIndex];
+        const hasProduct = selectedOption && selectedOption.value !== '';
+        const qty = parseInt(qtyInput.value) || 1;
+        const fulfillment = getFulfillmentDetails();
+
+        previewName.textContent = custName.value.trim() || '—';
+        previewWa.textContent = custWa.value.trim() || '—';
+
+        if (!hasProduct) {
+          summaryEmptyState.classList.remove('sembunyi');
+          summaryActiveState.classList.add('sembunyi');
+          qtyUnitLabel.textContent = 'Jumlah item terpilih';
+          return;
+        }
+
+        summaryEmptyState.classList.add('sembunyi');
+        summaryActiveState.classList.remove('sembunyi');
+
+        const productName = selectedOption.value;
+        const unitPrice = parseInt(selectedOption.getAttribute('data-price')) || 0;
+        const badge = selectedOption.getAttribute('data-badge') || 'Fresh Bake';
+        const unitType = selectedOption.getAttribute('data-unit') || 'pcs';
+
+        const subtotal = unitPrice * qty;
+        const grandTotal = subtotal + fulfillment.fee;
+
+        summaryBadge.textContent = badge;
+        summaryProductName.textContent = productName;
+        summaryUnitPrice.textContent = formatIDR(unitPrice) + (unitType !== 'pcs' ? ' / ' + unitType : '');
+        summaryQtyBadge.textContent = qty;
+        calcQty.textContent = qty;
+        summarySubtotal.textContent = formatIDR(subtotal);
+
+        if (fulfillment.method === 'delivery') {
+          summaryMethodText.textContent = 'Pemenuhan (Kurir)';
+          summaryMethodIcon.textContent = 'moped';
+          summaryDeliveryFee.textContent = formatIDR(fulfillment.fee);
+        } else {
+          summaryMethodText.textContent = 'Pemenuhan (Ambil Sendiri)';
+          summaryMethodIcon.textContent = 'storefront';
+          summaryDeliveryFee.textContent = 'Rp0';
+        }
+
+        summaryTotalGrand.textContent = formatIDR(grandTotal);
+        qtyUnitLabel.textContent = `Jumlah batch (${unitType})`;
+      }
+
+      btnQtyDec.addEventListener('click', function () {
+        let current = parseInt(qtyInput.value) || 1;
+        if (current > 1) { qtyInput.value = current - 1; updateSummary(); }
+      });
+      btnQtyInc.addEventListener('click', function () {
+        let current = parseInt(qtyInput.value) || 1;
+        if (current < 50) { qtyInput.value = current + 1; updateSummary(); }
+      });
+      qtyInput.addEventListener('input', function () {
+        let val = parseInt(qtyInput.value);
+        if (isNaN(val) || val < 1) qtyInput.value = 1;
+        if (val > 50) qtyInput.value = 50;
+        updateSummary();
+      });
+
+      custName.addEventListener('input', function () {
+        if (custName.value.trim().length > 0) errCustName.classList.remove('tampil');
+        updateSummary();
+      });
+      custWa.addEventListener('input', function () {
+        if (custWa.value.trim().length >= 8) errCustWa.classList.remove('tampil');
+        updateSummary();
+      });
+      custEmail.addEventListener('input', function () {
+        if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(custEmail.value.trim())) errCustEmail.classList.remove('tampil');
+      });
+      productSelect.addEventListener('change', function () {
+        if (productSelect.value !== '') errProduct.classList.remove('tampil');
+        updateSummary();
+      });
+      for (const radio of methodRadios) {
+        radio.addEventListener('change', updateSummary);
+      }
+
+      function validateForm() {
+        let isValid = true;
+
+        if (!custName.value.trim()) {
+          errCustName.classList.add('tampil');
+          isValid = false;
+        } else errCustName.classList.remove('tampil');
+
+        const waVal = custWa.value.trim();
+        const phoneRegex = /^(\+62|62|0)8[1-9][0-9]{6,11}$/;
+        if (!phoneRegex.test(waVal)) {
+          errCustWa.classList.add('tampil');
+          isValid = false;
+        } else errCustWa.classList.remove('tampil');
+
+        const emailVal = custEmail.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailVal)) {
+          errCustEmail.classList.add('tampil');
+          isValid = false;
+        } else errCustEmail.classList.remove('tampil');
+
+        if (!productSelect.value) {
+          errProduct.classList.add('tampil');
+          isValid = false;
+        } else errProduct.classList.remove('tampil');
+
+        return isValid;
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!validateForm()) return;
+
+        const randomCode = '#BB-' + Math.floor(1000 + Math.random() * 9000);
+        const selectedOption = productSelect.options[productSelect.selectedIndex];
+        const qty = parseInt(qtyInput.value) || 1;
+        const unitPrice = parseInt(selectedOption.getAttribute('data-price')) || 0;
+        const fulfillment = getFulfillmentDetails();
+        const grandTotal = (unitPrice * qty) + fulfillment.fee;
+
+        modalInvoiceCode.textContent = randomCode;
+        modalCustName.textContent = custName.value.trim();
+        modalItemName.textContent = `${qty}× ${selectedOption.value}`;
+        modalMethod.textContent = fulfillment.method === 'delivery' ? 'Pengiriman (GoSend / GrabExpress)' : 'Ambil Sendiri (Jl. Mentari Pagi No. 18)';
+        modalEstimatedTime.textContent = fulfillment.method === 'delivery' ? 'Dikirim pukul 14:45 WIB' : 'Pengambilan tersedia: Hari ini dari 14:30 WIB';
+        modalTotal.textContent = formatIDR(grandTotal);
+        modalWaTarget.textContent = custWa.value.trim();
+
+        modal.classList.remove('sembunyi');
+
+        toast.classList.add('tampil');
+        setTimeout(function () {
+          toast.classList.remove('tampil');
+        }, 5000);
+      });
+
+      function closeModal() { modal.classList.add('sembunyi'); }
+      closeModalBtn.addEventListener('click', closeModal);
+      btnDoneModal.addEventListener('click', closeModal);
+
+      btnNewOrder.addEventListener('click', function () {
+        closeModal();
+        form.reset();
+        qtyInput.value = 1;
+        updateSummary();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      updateSummary();
+    })();
+  </script>
+
+</body>
+</html>

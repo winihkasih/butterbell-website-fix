@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokasi &amp; Kontak — Butterbell Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="atas">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header-utama">
+    <div class="header-wadah">
+      <div class="merek">
+        <img src="/images/ButterBell Bakery Logo.png" alt="Logo Butterbell Bakery" class="merek-logo" />
+        <a href="index.html" class="merek-tautan">
+          <span class="merek-nama">Butterbell Bakery</span>
+          <span class="merek-tagline">Artisanal Bakehouse</span>
+        </a>
+      </div>
+      <nav class="navigasi">
+        <a href="index.html" class="navigasi-tautan">Beranda</a>
+        <a href="tentang.html" class="navigasi-tautan">Tentang Kami</a>
+        <a href="menu.html" class="navigasi-tautan">Menu Kami</a>
+        <a href="ulasan.html" class="navigasi-tautan">Ulasan</a>
+        <a href="lokasi.html" class="navigasi-tautan navigasi-tautan-aktif" aria-current="page">Lokasi &amp; Kontak</a>
+      </nav>
+      <div class="header-aksi">
+        <a href="pesan.html" class="tombol-pesan">Pesan Sekarang</a>
+        <div class="pembatas-vertikal">
+          <img src="/images/pp.png" alt="Profil" class="avatar-profil" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="isi-utama">
+    <div class="bungkus-flex-kolom">
+
+      <!-- ===== TOAST NOTIFIKASI ===== -->
+      <div class="toast-kontak" id="toastKontak" role="alert" aria-live="assertive">
+        <div class="toast-kontak-ikon">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        </div>
+        <div class="toast-kontak-isi">
+          <h5 class="toast-kontak-judul">Terima Kasih!</h5>
+          <p class="toast-kontak-pesan" id="pesanToast">
+            Pesan Anda berhasil dikirim! Tim Butterbell akan menghubungi Anda segera (Simulasi).
+          </p>
+        </div>
+        <button class="toast-kontak-tutup" onclick="tutupToastKontak()" aria-label="Tutup notifikasi">
+          <span class="material-symbols-outlined" style="font-size: 14px;">close</span>
+        </button>
+      </div>
+
+      <!-- ===== 1. JUDUL HALAMAN ===== -->
+      <section class="bagian-judul-lokasi">
+        <div class="header-judul-lokasi">
+          <div class="konten-judul-lokasi">
+            <div class="baris-label-kecil">
+              <span class="label-bagian-kecil">Atelier &amp; Bakehouse</span>
+              <span class="pembatas-tipis"></span>
+              <span class="label-lokasi-kecil">Semarang, Jawa Tengah</span>
+            </div>
+            <h1 class="judul-halaman-lokasi">Kunjungi Kami.</h1>
+            <p class="subjudul-lokasi">Camilan favorit baru Anda hanya ada di sekitar sudut.</p>
+          </div>
+          <div class="kartu-jadwal-panas">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">nest_clock_farsight_analog</span>
+            <span>Batch Oven Hangat: <strong>08.00 &amp; 14.30 WIB</strong></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 2. PETA & JADWAL ===== -->
+      <section class="bagian-peta">
+        <div class="kisi-peta">
+
+          <!-- Peta -->
+          <div class="kartu-peta">
+            <div class="area-peta">
+              <div class="gambar-peta" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsb-77exIXOaBAy9Db8jOC59hPz3HcE6v2CPSHkyNLjh2j-Mzk-xNshpvOW50j3ttT_23dCt5HxvyXjcq7Pf5oo6IccvyHl31bJtm9tVNn6cUkqsVUz8GsGORzcDCrFUbwZ5puw9TAaKA-8QuT4G82wq0ItN1Re1SQhQvL5yNp-fE_dEbKh8Osm_kDvdoTx7I6nKy7iQirXyWNcgr4l9sDr1YTPze4DckRwO26vHw');"></div>
+              <div class="scrim-peta"></div>
+
+              <div class="pin-peta">
+                <div class="pin-peta-label">
+                  <span class="ikon-pin">📍</span>
+                  <span>Butterbell Bakery - Semarang</span>
+                </div>
+                <div class="pin-peta-ujung"></div>
+              </div>
+
+              <div class="info-peta">
+                <div>
+                  <span class="label-koordinat">Koordinat</span>
+                  <p class="alamat-peta-lengkap">Jl. Mentari Pagi No. 18, Candisari, Semarang</p>
+                </div>
+                <a href="https://maps.google.com/?q=Jl.+Mentari+Pagi+No.+18,+Semarang" target="_blank" rel="noopener noreferrer" class="tombol-arah">
+                  <span class="material-symbols-outlined">directions</span>
+                  <span>Petunjuk Arah</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="area-amenitas">
+              <div class="daftar-amenitas">
+                <div class="amenitas-item">
+                  <span class="material-symbols-outlined">local_parking</span>
+                  <span>Parkir Gratis</span>
+                </div>
+                <div class="amenitas-item">
+                  <span class="material-symbols-outlined">table_restaurant</span>
+                  <span>Dine-in Nyaman</span>
+                </div>
+                <div class="amenitas-item">
+                  <span class="material-symbols-outlined">wifi</span>
+                  <span>Wi-Fi Tersedia</span>
+                </div>
+                <div class="amenitas-item emas">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bakery_dining</span>
+                  <span>Batch Segar Tiap 2 Jam</span>
+                </div>
+              </div>
+              <span class="teks-catatan-amenitas">Salon ber-AC &amp; teras taman</span>
+            </div>
+          </div>
+
+          <!-- Kartu Jadwal -->
+          <div class="kartu-jadwal">
+            <div>
+              <div class="kepala-jadwal">
+                <div>
+                  <span class="label-jadwal">Jadwal Operasional</span>
+                  <h2 class="judul-jadwal">Jam Operasional</h2>
+                </div>
+                <span class="titik-status-buka" title="Bakehouse sedang buka"></span>
+              </div>
+
+              <div class="daftar-jadwal" style="margin-top: 16px;">
+                <div class="item-jadwal">
+                  <div class="kepala-item-jadwal">
+                    <span class="hari-jadwal">Senin – Jumat</span>
+                    <span class="badge-jadwal">Hari Kerja</span>
+                  </div>
+                  <p class="jam-jadwal">08.00 – 20.00 <small>WIB</small></p>
+                  <p class="ket-jadwal">Menu brioche sarapan lengkap tersedia hingga 11.30 WIB.</p>
+                </div>
+                <div class="item-jadwal">
+                  <div class="kepala-item-jadwal">
+                    <span class="hari-jadwal">Sabtu – Minggu</span>
+                    <span class="badge-jadwal emas">Weekend High Tea</span>
+                  </div>
+                  <p class="jam-jadwal">08.00 – 21.00 <small>WIB</small></p>
+                  <p class="ket-jadwal">Pertunjukan laminasi artisan live pukul 10.00 WIB.</p>
+                </div>
+              </div>
+
+              <div class="kotak-batch" style="margin-top: 16px;">
+                <div class="kepala-batch">
+                  <span class="material-symbols-outlined">schedule</span>
+                  <span>Hearth Pagi &amp; Sore</span>
+                </div>
+                <p class="ket-batch">
+                  Baguette hangat dan pain au chocolat keluar dari oven dek kami dua kali sehari. Pre-order diterima untuk paket besar.
+                </p>
+              </div>
+            </div>
+
+            <div class="catatan-disclaimer">
+              Catatan: Alamat dan kontak merupakan data fiktif untuk kebutuhan proyek website.
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== 3. FORM KONTAK & INFO ===== -->
+      <section class="bagian-form-kontak">
+        <div class="kisi-form-kontak">
+
+          <!-- Kolom info kiri -->
+          <div class="kolom-info-kontak">
+            <div class="kepala-info-kontak">
+              <span class="label-bagian-kecil" style="color: var(--warna-sekunder);">Hubungi Kami</span>
+              <h2 class="judul-info-kontak">Kami Senang Mendengar dari Anda.</h2>
+              <p class="ket-info-kontak">
+                Baik untuk menanyakan kue pengantin bertingkat khusus, tower hadiah korporat, reservasi akhir pekan, atau sekadar menyapa, para patissier kami siap membantu.
+              </p>
+            </div>
+
+            <div class="daftar-info-kontak">
+              <!-- Lokasi -->
+              <div class="kartu-info-kontak">
+                <div class="ikon-kontak">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+                </div>
+                <div class="konten-kontak">
+                  <span class="label-kontak">Lokasi Toko</span>
+                  <p class="judul-kontak">Butterbell Bakery</p>
+                  <p class="detail-kontak">Jl. Mentari Pagi No. 18, Semarang, Jawa Tengah, Indonesia</p>
+                </div>
+              </div>
+
+              <!-- Telepon -->
+              <a href="tel:+6281234567890" class="kartu-info-kontak tautan">
+                <div class="ikon-kontak">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+                </div>
+                <div class="konten-kontak">
+                  <span class="label-kontak">Hubungi Concierge</span>
+                  <p class="judul-kontak">+62 812-3456-7890</p>
+                  <p class="detail-kontak">Tersedia selama jam operasional resmi.</p>
+                </div>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:hello@butterbellbakery.com" class="kartu-info-kontak tautan">
+                <div class="ikon-kontak">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+                </div>
+                <div class="konten-kontak">
+                  <span class="label-kontak">Email Langsung</span>
+                  <p class="judul-kontak">hello@butterbellbakery.com</p>
+                  <p class="detail-kontak">Rata-rata balasan dalam 24 jam kerja.</p>
+                </div>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com/butterbell.bakery" target="_blank" rel="noopener noreferrer" class="kartu-info-kontak tautan">
+                <div class="ikon-kontak">
+                  <span class="material-symbols-outlined">alternate_email</span>
+                </div>
+                <div class="konten-kontak">
+                  <span class="label-kontak">Instagram Resmi</span>
+                  <p class="judul-kontak">@butterbell.bakery</p>
+                  <p class="detail-kontak">Di balik layar, batch segar, &amp; kejutan musiman.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Form kontak kanan -->
+          <div class="wadah-form-kontak">
+            <div class="kepala-form-kontak">
+              <h3 class="judul-form-kontak">Kirim Pertanyaan</h3>
+              <p class="ket-form-kontak">Isi kolom di bawah dan pimpinan hospitality kami akan menghubungi Anda.</p>
+            </div>
+
+            <form class="form-kontak" id="formKontak" novalidate onsubmit="kirimFormKontak(event)">
+              <!-- Nama -->
+              <div class="grup-kontak">
+                <label class="label-kontak-form" for="namaLengkap">
+                  Nama Lengkap <span class="wajib">*</span>
+                </label>
+                <input class="input-kontak" id="namaLengkap" name="namaLengkap" type="text" placeholder="mis. Clara Sasmita" required />
+                <p class="pesan-error" id="errorNama">Silakan isi nama lengkap Anda.</p>
+              </div>
+
+              <!-- Email -->
+              <div class="grup-kontak">
+                <label class="label-kontak-form" for="emailKontak">
+                  Alamat Email <span class="wajib">*</span>
+                </label>
+                <input class="input-kontak" id="emailKontak" name="emailKontak" type="email" placeholder="clara@example.com" required />
+                <p class="pesan-error" id="errorEmail">Silakan masukkan format alamat email yang valid.</p>
+              </div>
+
+              <!-- Subjek -->
+              <div class="grup-kontak">
+                <label class="label-kontak-form" for="subjekKontak">
+                  Subjek <span class="wajib">*</span>
+                </label>
+                <div class="bungkus-select">
+                  <select class="select-kontak" id="subjekKontak" name="subjekKontak" required>
+                    <option disabled selected value="">Pilih subjek pesan Anda</option>
+                    <option value="Pertanyaan Umum">Pertanyaan Umum</option>
+                    <option value="Kue Khusus & Perayaan">Kue Khusus &amp; Perayaan Pribadi</option>
+                    <option value="Katering Korporat">Hadiah Korporat &amp; Pesanan Besar</option>
+                    <option value="Reservasi Meja">Permintaan Reservasi Meja</option>
+                    <option value="Umpan Balik">Umpan Balik &amp; Layanan Pelanggan</option>
+                  </select>
+                </div>
+                <p class="pesan-error" id="errorSubjek">Silakan pilih salah satu subjek pesan.</p>
+              </div>
+
+              <!-- Pesan -->
+              <div class="grup-kontak">
+                <label class="label-kontak-form" for="pesanKontak">
+                  Pesan <span class="wajib">*</span>
+                </label>
+                <textarea class="textarea-kontak" id="pesanKontak" name="pesanKontak" rows="4" placeholder="Ceritakan kebutuhan atau pertanyaan Anda di sini..." required></textarea>
+                <p class="pesan-error" id="errorPesan">Pesan tidak boleh kosong (minimal 10 karakter).</p>
+              </div>
+
+              <!-- Submit -->
+              <div style="padding-top: 8px;">
+                <button class="tombol-kirim-kontak" id="tombolKirimKontak" type="submit">
+                  <span id="teksTombolKirim">Kirim Pesan</span>
+                  <span class="material-symbols-outlined" id="ikonTombolKirim">send</span>
+                </button>
+              </div>
+
+              <p class="ket-privasi-kontak">Setiap formulir dilindungi enkripsi privasi Butterbell Bakehouse.</p>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== 4. KANAL KOMUNIKASI LANGSUNG ===== -->
+      <section class="bagian-kanal">
+        <div class="kepala-kanal">
+          <div>
+            <span class="label-bagian-kecil" style="color: var(--warna-sekunder);">Pengiriman Langsung</span>
+            <h2 class="judul-kecil" style="font-size: 22px; font-weight: 600; color: var(--warna-utama);">Kanal Langsung</h2>
+          </div>
+          <p class="teks-kecil" style="color: var(--warna-teks-variasi); max-width: 448px;">
+            Lebih suka mengobrol atau melihat lineup sourdough hari ini secara visual? Terhubung dengan kami langsung melalui platform pilihan Anda.
+          </p>
+        </div>
+
+        <div class="kisi-kanal">
+          <!-- Instagram -->
+          <a href="https://instagram.com/butterbell.bakery" target="_blank" rel="noopener noreferrer" class="kartu-kanal">
+            <div>
+              <div class="ikon-kanal">
+                <span class="material-symbols-outlined">photo_camera</span>
+              </div>
+              <span class="judul-kanal-kecil">Cerita Visual</span>
+              <h4 class="nama-kanal">Instagram</h4>
+              <p class="alamat-kanal">@butterbell.bakery</p>
+              <p class="ket-kanal">Cerita pagi harian, pengumuman spesial mingguan, dan di balik layar pastry.</p>
+            </div>
+            <div class="footer-kanal">
+              <span>Ikuti perjalanan kami</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/6281234567890?text=Halo%20Butterbell%20Bakery,%20saya%20ingin%20bertanya%20mengenai%20menu" target="_blank" rel="noopener noreferrer" class="kartu-kanal">
+            <div>
+              <div class="ikon-kanal">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+              </div>
+              <span class="judul-kanal-kecil">Instant Messenger</span>
+              <h4 class="nama-kanal">WhatsApp Chat</h4>
+              <p class="alamat-kanal">+62 812-3456-7890</p>
+              <p class="ket-kanal">Pertanyaan stok pastry instan, permintaan tahan meja, dan koordinasi pengambilan.</p>
+            </div>
+            <div class="footer-kanal">
+              <span>Mulai Chat WhatsApp</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:hello@butterbellbakery.com?subject=Butterbell%20Customer%20Inquiry" class="kartu-kanal">
+            <div>
+              <div class="ikon-kanal">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mark_email_read</span>
+              </div>
+              <span class="judul-kanal-kecil">Korespondensi Resmi</span>
+              <h4 class="nama-kanal">Email Support</h4>
+              <p class="alamat-kanal">hello@butterbellbakery.com</p>
+              <p class="ket-kanal">Kemitraan acara, permintaan cicip korporat, pertanyaan pers, dan pesanan katering.</p>
+            </div>
+            <div class="footer-kanal">
+              <span>Kirim email ke tim kami</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer-utama">
+    <div class="footer-wadah">
+      <div class="kisi-footer">
+        <div class="footer-merek">
+          <div class="footer-merek-header">
+            <img src="/images/ButterBell Bakery Logo.png" alt="Logo Butterbell Bakery" class="merek-logo" />
+            <span class="footer-merek-nama">Butterbell Bakery</span>
+          </div>
+          <p class="footer-slogan">"Dipanggang dengan Cinta, Dibuat untuk Momen Kecil Anda."</p>
+          <p class="footer-desk">Patiseri warisan Eropa yang dibuat dengan mentega kultur murni, fermentasi lambat, dan dedikasi abadi pada ritual pagi.</p>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Tautan Cepat</h4>
+          <a href="index.html" class="footer-tautan">Beranda</a>
+          <a href="tentang.html" class="footer-tautan">Tentang Kami</a>
+          <a href="menu.html" class="footer-tautan">Menu</a>
+          <a href="ulasan.html" class="footer-tautan">Ulasan Pelanggan</a>
+          <a href="lokasi.html" class="footer-tautan">Kontak</a>
+          <a href="pesan.html" class="footer-tautan">Pesan Online</a>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Bakery &amp; Pertanyaan</h4>
+          <p class="footer-alamat">Jl. Mentari Pagi No. 18, Semarang,<br />Jawa Tengah, Indonesia</p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">call</span><span>+62 812-3456-7890</span></p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">mail</span><span>hello@butterbellbakery.com</span></p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">alternate_email</span><span>@butterbell.bakery</span></p>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Jam Buka</h4>
+          <div class="footer-jam">
+            <div class="footer-jam-baris">
+              <span class="footer-jam-hari">Sen – Jum</span>
+              <span class="footer-jam-waktu">08.00 – 20.00 WIB</span>
+            </div>
+            <div class="footer-jam-baris">
+              <span class="footer-jam-hari">Sab – Min</span>
+              <span class="footer-jam-waktu">08.00 – 21.00 WIB</span>
+            </div>
+          </div>
+          <p class="footer-catatan">Batch segar keluar dari hearth setiap hari pukul 08.00 &amp; 14.30.</p>
+        </div>
+      </div>
+      <div class="footer-bawah">
+        <p>Copyright © Butterbell Bakery. Hak cipta dilindungi.</p>
+        <p class="footer-handcraft">Dibuat dengan Warisan</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#atas" class="tombol-ke-atas" aria-label="Kembali ke atas">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </a>
+
+  <!-- ==================== SCRIPT KONTAK ==================== -->
+  <script>
+    (function inisialisasiKontak() {
+      const form = document.getElementById('formKontak');
+      const inputNama = document.getElementById('namaLengkap');
+      const inputEmail = document.getElementById('emailKontak');
+      const inputSubjek = document.getElementById('subjekKontak');
+      const inputPesan = document.getElementById('pesanKontak');
+
+      const errNama = document.getElementById('errorNama');
+      const errEmail = document.getElementById('errorEmail');
+      const errSubjek = document.getElementById('errorSubjek');
+      const errPesan = document.getElementById('errorPesan');
+
+      // Reset error saat user mengetik
+      inputNama.addEventListener('input', () => {
+        if (inputNama.value.trim()) {
+          errNama.classList.remove('tampil');
+          inputNama.classList.remove('error');
+        }
+      });
+      inputEmail.addEventListener('input', () => {
+        if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputEmail.value.trim())) {
+          errEmail.classList.remove('tampil');
+          inputEmail.classList.remove('error');
+        }
+      });
+      inputSubjek.addEventListener('change', () => {
+        if (inputSubjek.value) {
+          errSubjek.classList.remove('tampil');
+          inputSubjek.classList.remove('error');
+        }
+      });
+      inputPesan.addEventListener('input', () => {
+        if (inputPesan.value.trim().length >= 10) {
+          errPesan.classList.remove('tampil');
+          inputPesan.classList.remove('error');
+        }
+      });
+
+      window.kirimFormKontak = function (event) {
+        event.preventDefault();
+        let valid = true;
+
+        // Validasi nama
+        if (!inputNama.value.trim()) {
+          errNama.classList.add('tampil');
+          inputNama.classList.add('error');
+          valid = false;
+        }
+
+        // Validasi email
+        if (!inputEmail.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputEmail.value.trim())) {
+          errEmail.classList.add('tampil');
+          inputEmail.classList.add('error');
+          valid = false;
+        }
+
+        // Validasi subjek
+        if (!inputSubjek.value) {
+          errSubjek.classList.add('tampil');
+          inputSubjek.classList.add('error');
+          valid = false;
+        }
+
+        // Validasi pesan
+        if (!inputPesan.value.trim() || inputPesan.value.trim().length < 10) {
+          errPesan.classList.add('tampil');
+          inputPesan.classList.add('error');
+          valid = false;
+        }
+
+        if (!valid) return;
+
+        // Simulasi pengiriman
+        const tombol = document.getElementById('tombolKirimKontak');
+        const teksTombol = document.getElementById('teksTombolKirim');
+        const ikonTombol = document.getElementById('ikonTombolKirim');
+
+        tombol.disabled = true;
+        teksTombol.textContent = 'Mengirimkan...';
+        ikonTombol.textContent = 'hourglass_empty';
+        ikonTombol.classList.add('berputar');
+
+        setTimeout(() => {
+          tombol.disabled = false;
+          teksTombol.textContent = 'Kirim Pesan';
+          ikonTombol.textContent = 'send';
+          ikonTombol.classList.remove('berputar');
+
+          form.reset();
+          tampilkanToastKontak();
+        }, 750);
+      };
+
+      let timeoutToast;
+      window.tampilkanToastKontak = function () {
+        const toast = document.getElementById('toastKontak');
+        if (!toast) return;
+        toast.classList.add('tampil');
+        clearTimeout(timeoutToast);
+        timeoutToast = setTimeout(tutupToastKontak, 6000);
+      };
+
+      window.tutupToastKontak = function () {
+        const toast = document.getElementById('toastKontak');
+        if (toast) toast.classList.remove('tampil');
+      };
+    })();
+  </script>
+
+</body>
+</html>

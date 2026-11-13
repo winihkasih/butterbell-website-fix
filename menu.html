@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Kami — Butterbell Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="atas">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header-utama">
+    <div class="header-wadah">
+      <div class="merek">
+        <img src="/images/ButterBell Bakery Logo.png" alt="Logo Butterbell Bakery" class="merek-logo" />
+        <a href="index.html" class="merek-tautan">
+          <span class="merek-nama">Butterbell Bakery</span>
+          <span class="merek-tagline">Artisanal Bakehouse</span>
+        </a>
+      </div>
+      <nav class="navigasi">
+        <a href="index.html" class="navigasi-tautan">Beranda</a>
+        <a href="tentang.html" class="navigasi-tautan">Tentang Kami</a>
+        <a href="menu.html" class="navigasi-tautan navigasi-tautan-aktif" aria-current="page">Menu Kami</a>
+        <a href="ulasan.html" class="navigasi-tautan">Ulasan</a>
+        <a href="lokasi.html" class="navigasi-tautan">Lokasi &amp; Kontak</a>
+      </nav>
+      <div class="header-aksi">
+        <a href="pesan.html" class="tombol-pesan">Pesan Sekarang</a>
+        <div class="pembatas-vertikal">
+          <img src="/images/pp.png" alt="Profil" class="avatar-profil" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="isi-utama">
+    <div class="bungkus-flex-kolom">
+
+      <!-- ===== JUDUL EDITORIAL ===== -->
+      <section class="bagian-judul-menu">
+        <div class="wadah">
+          <div class="kisi-judul-menu">
+            <div class="konten-judul-menu">
+              <span class="lencana-kecil">Hearth &amp; Patiseri Harian</span>
+              <h1 class="judul-display">Sesuatu yang Enak Sedang Dipanggang.</h1>
+              <p class="teks-besar" style="color: var(--warna-teks-variasi);">
+                Jelajahi pilihan favorit kami yang baru dipanggang, dibuat setiap fajar dengan mentega kultur, fermentasi sourdough lambat, dan biji-bijian artisan.
+              </p>
+            </div>
+            <div class="ringkasan-metrik">
+              <div class="metrik-mini">
+                <span class="metrik-mini-nilai">10</span>
+                <span class="metrik-mini-label">Item Buatan Tangan</span>
+              </div>
+              <div class="pembatas-metrik"></div>
+              <div class="metrik-mini">
+                <span class="metrik-mini-nilai">08:00</span>
+                <span class="metrik-mini-label">Hangat dari Hearth</span>
+              </div>
+              <div class="pembatas-metrik"></div>
+              <div class="metrik-mini">
+                <span class="metrik-mini-nilai emas">3</span>
+                <span class="metrik-mini-label">Ikon Signature</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== BEST SELLER HIGHLIGHTS ===== -->
+      <section class="bagian-terlaris">
+        <div class="wadah">
+          <div class="kepala-terlaris">
+            <div>
+              <div class="label-aksen">
+                <span class="material-symbols-outlined" style="color: var(--warna-sekunder); font-size: 14px;">stars</span>
+                <span class="label-sedang" style="color: var(--warna-sekunder); text-transform: uppercase; letter-spacing: 0.1em;">Favorit Patron</span>
+              </div>
+              <h2 class="judul-besar">Highlight Terlaris</h2>
+            </div>
+            <p class="teks-kecil" style="color: var(--warna-teks-variasi); max-width: 448px;">
+              Ritual pagi dan teh sore yang dicintai. Kreasi paling dicari, dipanggang dalam batch kecil terbatas dua kali sehari.
+            </p>
+          </div>
+
+          <div class="kisi-terlaris">
+            <!-- Terlaris 1 -->
+            <article class="kartu-terlaris">
+              <div class="kartu-terlaris-gambar">
+                <img src="/images/dubai cwecy cuki.jpg" alt="Dubai Chewy Cookie" />
+                <span class="label-badge-terlaris">
+                  <span class="material-symbols-outlined" style="font-size: 12px; font-variation-settings: 'FILL' 1;">star</span>
+                  Terlaris
+                </span>
+                <span class="label-badge-kategori">Cookies</span>
+              </div>
+              <div class="kartu-terlaris-isi">
+                <div>
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-terlaris-judul">Dubai Chewy Cookie</h3>
+                    <span class="kartu-terlaris-harga">Rp28.000</span>
+                  </div>
+                  <p class="kartu-terlaris-desk" style="margin-top: 8px;">
+                    Cookie dengan tekstur chewy, dilengkapi isian pistachio dan kunafa yang creamy serta renyah.
+                  </p>
+                  <div class="kartu-produk-tag" style="margin-top: 8px;">
+                    <span class="tag-kecil">Pistachio Ganache</span>
+                    <span class="tag-kecil">Kunafa Renyah</span>
+                  </div>
+                </div>
+                <a href="pesan.html?item=Dubai%20Chewy%20Cookie&price=28000" class="tombol-order-kotak">
+                  <span>Pesan Sekarang</span>
+                  <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Terlaris 2 -->
+            <article class="kartu-terlaris">
+              <div class="kartu-terlaris-gambar">
+                <img src="/images/salt bread.jpg" alt="Saltbread" />
+                <span class="label-badge-terlaris">
+                  <span class="material-symbols-outlined" style="font-size: 12px; font-variation-settings: 'FILL' 1;">star</span>
+                  Terlaris
+                </span>
+                <span class="label-badge-kategori">Roti &amp; Pastry</span>
+              </div>
+              <div class="kartu-terlaris-isi">
+                <div>
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-terlaris-judul">Saltbread</h3>
+                    <span class="kartu-terlaris-harga">Rp18.000</span>
+                  </div>
+                  <p class="kartu-terlaris-desk" style="margin-top: 8px;">
+                    Roti dengan tekstur lembut dan bagian luar sedikit renyah, dilengkapi butter dan taburan garam.
+                  </p>
+                  <div class="kartu-produk-tag" style="margin-top: 8px;">
+                    <span class="tag-kecil">Maldon Sea Salt</span>
+                    <span class="tag-kecil">French Butter Hearth</span>
+                  </div>
+                </div>
+                <a href="pesan.html?item=Saltbread&price=18000" class="tombol-order-kotak">
+                  <span>Pesan Sekarang</span>
+                  <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Terlaris 3 -->
+            <article class="kartu-terlaris">
+              <div class="kartu-terlaris-gambar">
+                <img src="/images/images.jpg" alt="Tiramisu Cake" />
+                <span class="label-badge-terlaris">
+                  <span class="material-symbols-outlined" style="font-size: 12px; font-variation-settings: 'FILL' 1;">star</span>
+                  Terlaris
+                </span>
+                <span class="label-badge-kategori">Kue &amp; Dessert</span>
+              </div>
+              <div class="kartu-terlaris-isi">
+                <div>
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-terlaris-judul">Tiramisu Cake</h3>
+                    <span class="kartu-terlaris-harga">Rp38.000 <small style="font-size: 12px; font-weight: 400; color: var(--warna-teks-variasi);">/ slice</small></span>
+                  </div>
+                  <p class="kartu-terlaris-desk" style="margin-top: 8px;">
+                    Dessert dengan perpaduan sponge cake, coffee, dan mascarpone cream yang meleleh sempurna.
+                  </p>
+                  <div class="kartu-produk-tag" style="margin-top: 8px;">
+                    <span class="tag-kecil">Arabica Cold Brew</span>
+                    <span class="tag-kecil">Mascarpone Crema</span>
+                  </div>
+                </div>
+                <a href="pesan.html?item=Tiramisu%20Cake&price=38000" class="tombol-order-kotak">
+                  <span>Pesan Sekarang</span>
+                  <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FILTER KATEGORI ===== -->
+      <section class="filter-kategori">
+        <div class="wadah">
+          <div class="filter-wadah">
+            <div class="daftar-kategori" id="filterKategori">
+              <button class="tombol-kategori aktif" data-kategori="semua">
+                <span>Semua Produk</span>
+                <span class="lencana-jumlah">10</span>
+              </button>
+              <button class="tombol-kategori" data-kategori="cookies">
+                <span>Cookies</span>
+                <span class="lencana-jumlah">3</span>
+              </button>
+              <button class="tombol-kategori" data-kategori="roti-pastry">
+                <span>Roti &amp; Pastry</span>
+                <span class="lencana-jumlah">5</span>
+              </button>
+              <button class="tombol-kategori" data-kategori="kue-dessert">
+                <span>Kue &amp; Dessert</span>
+                <span class="lencana-jumlah">2</span>
+              </button>
+            </div>
+            <div class="label-kategori-aktif">
+              <span class="material-symbols-outlined">oven_gen</span>
+              <em id="labelKategoriAktif">Menampilkan semua kreasi segar</em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== KATALOG PRODUK ===== -->
+      <section class="bagian-katalog">
+        <div class="wadah">
+          <div class="kisi-katalog" id="katalogGrid">
+
+            <!-- 1. Dubai Chewy Cookie -->
+            <div class="kartu-katalog" data-kategori="cookies">
+              <div class="kartu-katalog-gambar">
+                <img src="/images/dubai cwecy cuki.jpg" alt="Dubai Chewy Cookie" />
+                <span class="label-badge-terlaris">
+                  <span class="material-symbols-outlined" style="font-size: 12px; font-variation-settings: 'FILL' 1;">star</span>
+                  Terlaris
+                </span>
+                <span class="label-badge-kategori">Cookies</span>
+              </div>
+              <div class="kartu-katalog-isi">
+                <div class="kartu-katalog-info">
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-katalog-judul">Dubai Chewy Cookie</h3>
+                    <span class="kartu-katalog-harga">Rp28.000</span>
+                  </div>
+                  <p class="kartu-katalog-desk">Cookie dengan tekstur chewy, dilengkapi isian pistachio dan kunafa yang creamy serta renyah.</p>
+                  <div class="kartu-produk-tag">
+                    <span class="tag-kecil">Pistachio Crisp</span>
+                    <span class="tag-kecil">Rich Chewy</span>
+                  </div>
+                </div>
+                <div class="kartu-katalog-footer">
+                  <span class="kode-sku">SKU: BC-CK01</span>
+                  <a href="pesan.html?item=Dubai%20Chewy%20Cookie&price=28000" class="tombol-pesan-kotak">
+                    <span>Pesan</span>
+                    <span class="material-symbols-outlined" style="font-size: 14px;">shopping_bag</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Cookies Benben -->
+            <div class="kartu-katalog" data-kategori="cookies">
+              <div class="kartu-katalog-gambar">
+                <img src="/images/choco benben.jpg" alt="Cookies Benben" />
+                <span class="label-badge-kategori">Cookies</span>
+              </div>
+              <div class="kartu-katalog-isi">
+                <div class="kartu-katalog-info">
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-katalog-judul">Cookies Benben</h3>
+                    <span class="kartu-katalog-harga">Rp18.000</span>
+                  </div>
+                  <p class="kartu-katalog-desk">Chocolate cookies dengan rasa cokelat yang kaya dan tekstur lembut di bagian tengah.</p>
+                  <div class="kartu-produk-tag">
+                    <span class="tag-kecil">Dark Cocoa</span>
+                    <span class="tag-kecil">Fudge Core</span>
+                  </div>
+                </div>
+                <div class="kartu-katalog-footer">
+                  <span class="kode-sku">SKU: BC-CK02</span>
+                  <a href="pesan.html?item=Cookies%20Benben&price=18000" class="tombol-pesan-kotak">
+                    <span>Pesan</span>
+                    <span class="material-symbols-outlined" style="font-size: 14px;">shopping_bag</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Cookies Gungun -->
+            <div class="kartu-katalog" data-kategori="cookies">
+              <div class="kartu-katalog-gambar">
+                <img src="/images/greentea.jpg" alt="Cookies Gungun" />
+                <span class="label-badge-kategori">Cookies</span>
+              </div>
+              <div class="kartu-katalog-isi">
+                <div class="kartu-katalog-info">
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-katalog-judul">Cookies Gungun</h3>
+                    <span class="kartu-katalog-harga">Rp20.000</span>
+                  </div>
+                  <p class="kartu-katalog-desk">Green tea cookies dengan aroma matcha yang khas dan rasa manis yang seimbang.</p>
+                  <div class="kartu-produk-tag">
+                    <span class="tag-kecil">Uji Matcha</span>
+                    <span class="tag-kecil">White Chocolate</span>
+                  </div>
+                </div>
+                <div class="kartu-katalog-footer">
+                  <span class="kode-sku">SKU: BC-CK03</span>
+                  <a href="pesan.html?item=Cookies%20Gungun&price=20000" class="tombol-pesan-kotak">
+                    <span>Pesan</span>
+                    <span class="material-symbols-outlined" style="font-size: 14px;">shopping_bag</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Saltbread -->
+            <div class="kartu-katalog" data-kategori="roti-pastry">
+              <div class="kartu-katalog-gambar">
+                <img src="/images/salt bread.jpg" alt="Saltbread" />
+                <span class="label-badge-terlaris">
+                  <span class="material-symbols-outlined" style="font-size: 12px; font-variation-settings: 'FILL' 1;">star</span>
+                  Terlaris
+                </span>
+                <span class="label-badge-kategori">Roti &amp; Pastry</span>
+              </div>
+              <div class="kartu-katalog-isi">
+                <div class="kartu-katalog-info">
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-katalog-judul">Saltbread</h3>
+                    <span class="kartu-katalog-harga">Rp18.000</span>
+                  </div>
+                  <p class="kartu-katalog-desk">Roti dengan tekstur lembut dan bagian luar sedikit renyah, dilengkapi butter dan taburan garam.</p>
+                  <div class="kartu-produk-tag">
+                    <span class="tag-kecil">Cultured Butter</span>
+                    <span class="tag-kecil">Sea Salt</span>
+                  </div>
+                </div>
+                <div class="kartu-katalog-footer">
+                  <span class="kode-sku">SKU: BC-BP01</span>
+                  <a href="pesan.html?item=Saltbread&price=18000" class="tombol-pesan-kotak">
+                    <span>Pesan</span>
+                    <span class="material-symbols-outlined" style="font-size: 14px;">shopping_bag</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Croissant -->
+            <div class="kartu-katalog" data-kategori="roti-pastry">
+              <div class="kartu-katalog-gambar">
+                <img src="/images/A Croissant Quest in Paris - Bake from Scratch - Page 8.jpg" alt="Croissant" />
+                <span class="label-badge-kategori">Roti &amp; Pastry</span>
+              </div>
+              <div class="kartu-katalog-isi">
+                <div class="kartu-katalog-info">
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-katalog-judul">Croissant</h3>
+                    <span class="kartu-katalog-harga">Rp25.000</span>
+                  </div>
+                  <p class="kartu-katalog-desk">Pastry klasik dengan lapisan tipis yang renyah dan aroma butter yang harum dan memikat.</p>
+                  <div class="kartu-produk-tag">
+                    <span class="tag-kecil">81 Flaky Layers</span>
+                    <span class="tag-kecil">Pure Butter</span>
+                  </div>
+                </div>
+                <div class="kartu-katalog-footer">
+                  <span class="kode-sku">SKU: BC-BP02</span>
+                  <a href="pesan.html?item=Croissant&price=25000" class="tombol-pesan-kotak">
+                    <span>Pesan</span>
+                    <span class="material-symbols-outlined" style="font-size: 14px;">shopping_bag</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Sourdough -->
+            <div class="kartu-katalog" data-kategori="roti-pastry">
+              <div class="kartu-katalog-gambar">
+                <img src="/images/sour.jpg" alt="Sourdough" />
+                <span class="label-badge-kategori">Roti &amp; Pastry</span>
+              </div>
+              <div class="kartu-katalog-isi">
+                <div class="kartu-katalog-info">
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-katalog-judul">Sourdough</h3>
+                    <span class="kartu-katalog-harga">Rp55.000 <small>/ loaf</small></span>
+                  </div>
+                  <p class="kartu-katalog-desk">Artisan bread dengan proses fermentasi alami, tekstur berongga, dan rasa sedikit tangy.</p>
+                  <div class="kartu-produk-tag">
+                    <span class="tag-kecil">36-hr Ferment</span>
+                    <span class="tag-kecil">Wild Starter</span>
+                  </div>
+                </div>
+                <div class="kartu-katalog-footer">
+                  <span class="kode-sku">SKU: BC-BP03</span>
+                  <a href="pesan.html?item=Sourdough&price=55000" class="tombol-pesan-kotak">
+                    <span>Pesan</span>
+                    <span class="material-symbols-outlined" style="font-size: 14px;">shopping_bag</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Cinnamon Roll -->
+            <div class="kartu-katalog" data-kategori="roti-pastry">
+              <div class="kartu-katalog-gambar">
+                <img src="/images/cinnamon roll.jpg" alt="Cinnamon Roll" />
+                <span class="label-badge-kategori">Roti &amp; Pastry</span>
+              </div>
+              <div class="kartu-katalog-isi">
+                <div class="kartu-katalog-info">
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-katalog-judul">Cinnamon Roll</h3>
+                    <span class="kartu-katalog-harga">Rp25.000</span>
+                  </div>
+                  <p class="kartu-katalog-desk">Roti gulung lembut dengan cinnamon sugar harum dan lapisan vanilla glaze yang lumer.</p>
+                  <div class="kartu-produk-tag">
+                    <span class="tag-kecil">Ceylon Cinnamon</span>
+                    <span class="tag-kecil">Vanilla Glaze</span>
+                  </div>
+                </div>
+                <div class="kartu-katalog-footer">
+                  <span class="kode-sku">SKU: BC-BP04</span>
+                  <a href="pesan.html?item=Cinnamon%20Roll&price=25000" class="tombol-pesan-kotak">
+                    <span>Pesan</span>
+                    <span class="material-symbols-outlined" style="font-size: 14px;">shopping_bag</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Danish Pastry -->
+            <div class="kartu-katalog" data-kategori="roti-pastry">
+              <div class="kartu-katalog-gambar">
+                <img src="/images/danish.jpg" alt="Danish Pastry" />
+                <span class="label-badge-kategori">Roti &amp; Pastry</span>
+              </div>
+              <div class="kartu-katalog-isi">
+                <div class="kartu-katalog-info">
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-katalog-judul">Danish Pastry</h3>
+                    <span class="kartu-katalog-harga">Mulai Rp25.000</span>
+                  </div>
+                  <p class="kartu-katalog-desk">Pastry berlapis dengan pilihan topping segar seperti strawberry, blueberry, dan rich custard.</p>
+                  <div class="kartu-produk-tag">
+                    <span class="tag-kecil">Seasonal Berry</span>
+                    <span class="tag-kecil">Madagascar Custard</span>
+                  </div>
+                </div>
+                <div class="kartu-katalog-footer">
+                  <span class="kode-sku">SKU: BC-BP05</span>
+                  <a href="pesan.html?item=Danish%20Pastry&price=25000" class="tombol-pesan-kotak">
+                    <span>Pesan</span>
+                    <span class="material-symbols-outlined" style="font-size: 14px;">shopping_bag</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Cheesecake -->
+            <div class="kartu-katalog" data-kategori="kue-dessert">
+              <div class="kartu-katalog-gambar">
+                <img src="/images/cheesecake.jpg" alt="Cheesecake" />
+                <span class="label-badge-kategori">Kue &amp; Dessert</span>
+              </div>
+              <div class="kartu-katalog-isi">
+                <div class="kartu-katalog-info">
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-katalog-judul">Cheesecake</h3>
+                    <span class="kartu-katalog-harga">Rp35.000 <small>/ slice</small></span>
+                  </div>
+                  <p class="kartu-katalog-desk">Cheesecake dengan tekstur creamy dan perpaduan rasa manis serta sedikit sentuhan asam menyegarkan.</p>
+                  <div class="kartu-produk-tag">
+                    <span class="tag-kecil">Philadelphia Cream</span>
+                    <span class="tag-kecil">Burnt Caramel</span>
+                  </div>
+                </div>
+                <div class="kartu-katalog-footer">
+                  <span class="kode-sku">SKU: BC-CD01</span>
+                  <a href="pesan.html?item=Cheesecake&price=35000" class="tombol-pesan-kotak">
+                    <span>Pesan</span>
+                    <span class="material-symbols-outlined" style="font-size: 14px;">shopping_bag</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10. Tiramisu Cake -->
+            <div class="kartu-katalog" data-kategori="kue-dessert">
+              <div class="kartu-katalog-gambar">
+                <img src="/images/images.jpg" alt="Tiramisu Cake" />
+                <span class="label-badge-terlaris">
+                  <span class="material-symbols-outlined" style="font-size: 12px; font-variation-settings: 'FILL' 1;">star</span>
+                  Terlaris
+                </span>
+                <span class="label-badge-kategori">Kue &amp; Dessert</span>
+              </div>
+              <div class="kartu-katalog-isi">
+                <div class="kartu-katalog-info">
+                  <div class="kepala-kartu-baris">
+                    <h3 class="kartu-katalog-judul">Tiramisu Cake</h3>
+                    <span class="kartu-katalog-harga">Rp38.000 <small>/ slice</small></span>
+                  </div>
+                  <p class="kartu-katalog-desk">Dessert dengan perpaduan sponge cake, coffee, dan mascarpone cream dengan tekstur lembut tak tertandingi.</p>
+                  <div class="kartu-produk-tag">
+                    <span class="tag-kecil">Espresso Soaked</span>
+                    <span class="tag-kecil">Mascarpone Silk</span>
+                  </div>
+                </div>
+                <div class="kartu-katalog-footer">
+                  <span class="kode-sku">SKU: BC-CD02</span>
+                  <a href="pesan.html?item=Tiramisu%20Cake&price=38000" class="tombol-pesan-kotak">
+                    <span>Pesan</span>
+                    <span class="material-symbols-outlined" style="font-size: 14px;">shopping_bag</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Empty state -->
+          <div class="keadaan-kosong sembunyi" id="keadaanKosong">
+            <span class="material-symbols-outlined">search_off</span>
+            <p>Tidak ada pastry ditemukan di kategori ini.</p>
+            <p>Coba pilih "Semua Produk" untuk melihat menu bakehouse lengkap kami.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== BANNER CATATAN ===== -->
+      <section class="bagian-catatan">
+        <div class="wadah">
+          <div class="kartu-catatan">
+            <div class="catatan-konten">
+              <div class="ikon-info-bulat">
+                <span class="material-symbols-outlined" style="font-size: 20px;">info</span>
+              </div>
+              <div>
+                <h4 class="catatan-judul">Catatan Pembelian &amp; Ketentuan Harga</h4>
+                <p class="catatan-desk">
+                  Catatan: Harga cheesecake dan tiramisu cake merupakan harga per slice. Harga sourdough merupakan harga per loaf. Harga Danish bergantung pada varian topping buah.
+                </p>
+              </div>
+            </div>
+            <a href="pesan.html" class="tombol-catatan">
+              <span>Lihat Form Pemesanan</span>
+              <span class="material-symbols-outlined" style="font-size: 14px;">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== BANNER RITUAL BAKERY ===== -->
+      <section class="bagian-ritual">
+        <div class="wadah">
+          <div class="kisi-ritual">
+            <div class="kartu-ritual">
+              <span class="material-symbols-outlined">schedule</span>
+              <h4 class="kartu-ritual-judul">Bake Pagi pukul 08.00</h4>
+              <p class="kartu-ritual-desk">Roti sourdough dan croissant sarapan berlapis keluar dari hearth batu dengan hangat dan siap.</p>
+            </div>
+            <div class="kartu-ritual">
+              <span class="material-symbols-outlined">cookie</span>
+              <h4 class="kartu-ritual-judul">Drop Sore pukul 14.30</h4>
+              <p class="kartu-ritual-desk">Cookie Dubai Chewy dan batch Saltbread yang baru diisi ulang untuk kenikmatan waktu minum teh.</p>
+            </div>
+            <div class="kartu-ritual">
+              <span class="material-symbols-outlined">cake</span>
+              <h4 class="kartu-ritual-judul">Dessert Dingin Setiap Hari</h4>
+              <p class="kartu-ritual-desk">Tiramisu dan cheesecake artisan diistirahatkan di bawah kontrol suhu untuk krim yang optimal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer-utama">
+    <div class="footer-wadah">
+      <div class="kisi-footer">
+        <div class="footer-merek">
+          <div class="footer-merek-header">
+            <img src="/images/ButterBell Bakery Logo.png" alt="Logo Butterbell Bakery" class="merek-logo" />
+            <span class="footer-merek-nama">Butterbell Bakery</span>
+          </div>
+          <p class="footer-slogan">"Dipanggang dengan Cinta, Dibuat untuk Momen Kecil Anda."</p>
+          <p class="footer-desk">Patiseri warisan Eropa yang dibuat dengan mentega kultur murni, fermentasi lambat, dan dedikasi abadi pada ritual pagi.</p>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Tautan Cepat</h4>
+          <a href="index.html" class="footer-tautan">Beranda</a>
+          <a href="tentang.html" class="footer-tautan">Tentang Kami</a>
+          <a href="menu.html" class="footer-tautan">Menu</a>
+          <a href="ulasan.html" class="footer-tautan">Ulasan Pelanggan</a>
+          <a href="lokasi.html" class="footer-tautan">Kontak</a>
+          <a href="pesan.html" class="footer-tautan">Pesan Online</a>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Bakery &amp; Pertanyaan</h4>
+          <p class="footer-alamat">Jl. Mentari Pagi No. 18, Semarang,<br />Jawa Tengah, Indonesia</p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">call</span><span>+62 812-3456-7890</span></p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">mail</span><span>hello@butterbellbakery.com</span></p>
+          <p class="footer-kontak-item"><span class="material-symbols-outlined">alternate_email</span><span>@butterbell.bakery</span></p>
+        </div>
+        <div class="footer-kolom">
+          <h4 class="footer-judul">Jam Buka</h4>
+          <div class="footer-jam">
+            <div class="footer-jam-baris">
+              <span class="footer-jam-hari">Sen – Jum</span>
+              <span class="footer-jam-waktu">08.00 – 20.00 WIB</span>
+            </div>
+            <div class="footer-jam-baris">
+              <span class="footer-jam-hari">Sab – Min</span>
+              <span class="footer-jam-waktu">08.00 – 21.00 WIB</span>
+            </div>
+          </div>
+          <p class="footer-catatan">Batch segar keluar dari hearth setiap hari pukul 08.00 &amp; 14.30.</p>
+        </div>
+      </div>
+      <div class="footer-bawah">
+        <p>Copyright © Butterbell Bakery. Hak cipta dilindungi.</p>
+        <p class="footer-handcraft">Dibuat dengan Warisan</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#atas" class="tombol-ke-atas" aria-label="Kembali ke atas">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </a>
+
+  <!-- ==================== SCRIPT FILTER ==================== -->
+  <script>
+    (function inisialisasiFilterMenu() {
+      const tombolKategori = document.querySelectorAll('.tombol-kategori');
+      const kartuProduk = document.querySelectorAll('.kartu-katalog');
+      const labelAktif = document.getElementById('labelKategoriAktif');
+      const keadaanKosong = document.getElementById('keadaanKosong');
+
+      const deskripsi = {
+        'semua': 'Menampilkan semua kreasi segar',
+        'cookies': 'Menampilkan cookies chewy dan bertekstur lembut khas kami',
+        'roti-pastry': 'Menampilkan roti fermentasi lambat, croissant berlapis, dan pastry hearth',
+        'kue-dessert': 'Menampilkan kue krim dingin dan irisan patiseri halus'
+      };
+
+      tombolKategori.forEach(tombol => {
+        tombol.addEventListener('click', () => {
+          const kategoriTarget = tombol.getAttribute('data-kategori');
+
+          tombolKategori.forEach(t => t.classList.remove('aktif'));
+          tombol.classList.add('aktif');
+
+          if (labelAktif && deskripsi[kategoriTarget]) {
+            labelAktif.textContent = deskripsi[kategoriTarget];
+          }
+
+          let jumlahTampil = 0;
+          kartuProduk.forEach(kartu => {
+            const kategoriKartu = kartu.getAttribute('data-kategori');
+            if (kategoriTarget === 'semua' || kategoriKartu === kategoriTarget) {
+              kartu.style.display = 'flex';
+              jumlahTampil++;
+            } else {
+              kartu.style.display = 'none';
+            }
+          });
+
+          if (keadaanKosong) {
+            if (jumlahTampil === 0) {
+              keadaanKosong.classList.remove('sembunyi');
+            } else {
+              keadaanKosong.classList.add('sembunyi');
+            }
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
